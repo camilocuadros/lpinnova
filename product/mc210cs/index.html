@@ -1,0 +1,2092 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="/xmlrpc.php">
+
+<title>MC210CS &#8211; LP Innova</title>
+<style id="spoki-style-buttons">.spoki-button-relative * {
+    box-sizing: border-box;
+}
+
+.spoki-button-relative {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 4px 0;
+    overflow: hidden;
+}
+
+.spoki-button-relative > .spoki-button {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: #23D366;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    max-width: 100%;
+    line-height: 100%;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+.spoki-button-relative > .spoki-button .spoki-wa-icon {
+    margin: 0 6px 0 0;
+}
+
+.spoki-button-relative > .spoki-button:hover {
+    opacity: 0.9;
+    background-color: #23D366;
+}
+
+.spoki-button-relative > .spoki-button svg {
+    position: relative;
+    min-height: unset;
+    height: 12px;
+}
+
+.spoki-button-relative > .spoki-button svg + span {
+    margin-left: 6px;
+}
+
+.spoki-button-relative > .spoki-button span {
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 100%;
+}
+
+.spoki-button-relative > .spoki-button.size-1 {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 12px;
+}
+
+.spoki-button-relative > .spoki-button.size-1 svg {
+    height: 12px;
+}
+
+.spoki-button-relative > .spoki-button.size-2, .spoki-button-relative > .spoki-button.size-4 {
+    padding: 8px 14px;
+    font-size: 12px;
+    border-radius: 16px;
+}
+
+.spoki-button-relative > .spoki-button.size-2 svg, .spoki-button-relative > .spoki-button.size-4 svg {
+    height: 16px;
+    width: auto;
+}
+
+.spoki-button-relative > .spoki-button.size-3 {
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 24px;
+}
+
+.spoki-button-relative > .spoki-button.size-3 svg {
+    height: 18px;
+}
+
+.spoki-button-relative > .spoki-button.size-4 {
+    width: 100%;
+}
+
+#spoki-fixed-btn {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 24px;
+    z-index: 9999;
+}
+
+#spoki-fixed-btn #spoki-chat-link {
+    display: flex;
+    background-color: #23D366;
+    width: 65%;
+    height: 65%;
+    border-radius: 50%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+    text-decoration: none !important;
+}
+
+#spoki-fixed-btn #spoki-chat-link:hover {
+    opacity: 0.9;
+}
+
+#spoki-fixed-btn svg {
+    width: auto;
+    height: auto;
+    max-width: 65%;
+    max-height: 65%;
+}
+
+.spoki-fixed-btn-label {
+    position: absolute;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    background-color: white;
+    width: max-content;
+    max-width: 60vw;
+    box-shadow: #00122e2e 0 1px 50px 0;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.spoki-fixed-btn-label img {
+    max-height: 16px;
+    max-width: 16px;
+    object-fit: contain;
+}
+.spoki-fixed-btn-label.hide-not-hover {
+    display: none;
+}
+
+#spoki-fixed-btn:active .spoki-fixed-btn-label.hide-not-hover,
+#spoki-fixed-btn:focus .spoki-fixed-btn-label.hide-not-hover,
+#spoki-fixed-btn:hover .spoki-fixed-btn-label.hide-not-hover {
+    display: block;
+}
+
+.spoki-fixed-btn-popup {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    background-color: #f44336;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    font-size: 10px;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    z-index: 1;
+}
+
+#spoki-chat-preview {
+    position: absolute;
+    right: 0;
+    bottom: 52px;
+    margin-bottom: 12px;
+    border-radius: 16px;
+    background-color: white;
+    width: 300px;
+    max-width: 80vw;
+    height: auto;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    z-index: 999999999;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.25s ease, opacity 0.25s;
+
+}
+
+#spoki-chat-preview.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.25s ease, opacity 0.25s;
+}
+
+#spoki-chat-preview .spoki-chat-preview-chat-message {
+    background-color: white;
+    border-radius: 0 12px 12px 12px;
+    padding: 8px 12px;
+    position: relative;
+    margin-top: 8px;
+    margin-left: 16px;
+    margin-bottom: 50px;
+    max-width: 80%;
+    width: max-content;
+    border: 1px solid #EFEFEF;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, .8);
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+#spoki-chat-preview #spoki-chat-preview-footer {
+    display: flex;
+    flex-direction: row;
+    padding: 8px 8px 8px 16px;
+    flex: 1;
+    width: 100%;
+    background-color: #EFEFEF;
+    box-sizing: border-box;
+}
+
+#spoki-chat-preview #spoki-chat-preview-footer form {
+    display: inherit;
+    width: 100%;
+}
+
+#spoki-chat-preview #spoki-chat-preview-footer #spoki-chat-preview-message {
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 4px 16px;
+    color: rgba(0, 0, 0, .8);
+    border-radius: 16px;
+    outline: none !important;
+    margin-right: 8px;
+}
+
+#spoki-chat-preview #spoki-chat-preview-footer #spoki-chat-preview-send {
+    width: 32px !important;
+    min-width: 32px !important;
+    height: 32px !important;
+    min-height: 32px !important;
+    color: #7C8083;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    outline: unset !important;
+}
+
+#spoki-chat-preview #spoki-chat-preview-footer #spoki-chat-preview-send:hover,
+#spoki-chat-preview #spoki-chat-preview-footer #spoki-chat-preview-send:active,
+#spoki-chat-preview #spoki-chat-preview-footer #spoki-chat-preview-send:focus {
+    opacity: 0.8;
+}
+
+#spoki-chat-preview:not(.hidden) ~ #spoki-chat-link svg {
+    display: none;
+}
+
+#spoki-chat-preview:not(.hidden) ~ .spoki-fixed-btn-label,
+#spoki-chat-preview:not(.hidden) ~ .spoki-fixed-btn-popup {
+    display: none;
+}
+
+#spoki-chat-preview:not(.hidden) ~ #spoki-chat-link:before {
+    content: 'X';
+    color: white !important;
+    font-size: 18px;
+}
+
+@media (max-width: 575px) {
+    #spoki-fixed-btn.hidden-mobile {
+        display: none !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    #spoki-fixed-btn.hidden-tablet {
+        display: none !important;
+    }
+}
+
+@media (min-width: 992px) {
+    #spoki-fixed-btn.hidden-desktop {
+        display: none !important;
+    }
+}</style>
+<meta name="robots" content="max-image-preview:large">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="alternate" type="application/rss+xml" title="LP Innova &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="LP Innova &raquo; Comments Feed" href="/comments/feed/">
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.2"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"🏳️‍⚧️","🏳️​⚧️")?!1:!n(e,"🇺🇳","🇺​🇳")&&!n(e,"🏴󠁧󠁢󠁥󠁮󠁧󠁿","🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿");case"emoji":return!n(e,"🐦‍⬛","🐦​⬛")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id="wp-emoji-styles-inline-css" type="text/css">img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}</style>
+<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=6.7.2" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}</style>
+<style id="global-styles-inline-css" type="text/css">:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-family--inter: "Inter", sans-serif;--wp--preset--font-family--cardo: Cardo;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}</style>
+<link rel="stylesheet" id="photoswipe-css" href="/wp-content/plugins/woocommerce/assets/css/photoswipe/photoswipe.min.css?ver=9.6.1" type="text/css" media="all">
+<link rel="stylesheet" id="photoswipe-default-skin-css" href="/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.min.css?ver=9.6.1" type="text/css" media="all">
+<style id="woocommerce-inline-inline-css" type="text/css">.woocommerce form .form-row .required { visibility: visible; }</style>
+<link rel="stylesheet" id="brands-styles-css" href="/wp-content/plugins/woocommerce/assets/css/brands.css?ver=9.6.1" type="text/css" media="all">
+<link rel="stylesheet" id="electro-fonts-css" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&#038;display=swap" type="text/css" media="all">
+<link rel="stylesheet" id="font-electro-css" href="/wp-content/themes/electro/assets/css/font-electro.css?ver=3.3.9" type="text/css" media="all">
+<link rel="stylesheet" id="fontawesome-css" href="/wp-content/themes/electro/assets/vendor/fontawesome/css/all.min.css?ver=3.3.9" type="text/css" media="all">
+<link rel="stylesheet" id="animate-css-css" href="/wp-content/themes/electro/assets/vendor/animate.css/animate.min.css?ver=3.3.9" type="text/css" media="all">
+<link rel="stylesheet" id="electro-style-css" href="/wp-content/themes/electro/style.min.css?ver=3.3.9" type="text/css" media="all">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.9.6.1" id="jquery-blockui-js" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="wc-add-to-cart-js-extra">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"\/cart\/","is_cart":"","cart_redirect_after_add":"yes"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=9.6.1" id="wc-add-to-cart-js" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="/wp-content/plugins/woocommerce/assets/js/zoom/jquery.zoom.min.js?ver=1.7.21-wc.9.6.1" id="zoom-js" defer data-wp-strategy="defer"></script>
+<script type="text/javascript" src="/wp-content/plugins/woocommerce/assets/js/flexslider/jquery.flexslider.min.js?ver=2.7.2-wc.9.6.1" id="flexslider-js" defer data-wp-strategy="defer"></script>
+<script type="text/javascript" src="/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe.min.js?ver=4.1.1-wc.9.6.1" id="photoswipe-js" defer data-wp-strategy="defer"></script>
+<script type="text/javascript" src="/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe-ui-default.min.js?ver=4.1.1-wc.9.6.1" id="photoswipe-ui-default-js" defer data-wp-strategy="defer"></script>
+<script type="text/javascript" id="wc-single-product-js-extra">
+/* <![CDATA[ */
+var wc_single_product_params = {"i18n_required_rating_text":"Please select a rating","i18n_product_gallery_trigger_text":"View full-screen image gallery","review_rating_required":"yes","flexslider":{"rtl":false,"animation":"slide","smoothHeight":true,"directionNav":false,"controlNav":true,"slideshow":false,"animationSpeed":500,"animationLoop":false,"allowOneSlide":false},"zoom_enabled":"1","zoom_options":[],"photoswipe_enabled":"1","photoswipe_options":{"shareEl":false,"closeOnScroll":false,"history":false,"hideAnimationDuration":0,"showAnimationDuration":0},"flexslider_enabled":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js?ver=9.6.1" id="wc-single-product-js" defer data-wp-strategy="defer"></script>
+<script type="text/javascript" src="/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.9.6.1" id="js-cookie-js" defer data-wp-strategy="defer"></script>
+<script type="text/javascript" id="woocommerce-js-extra">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=9.6.1" id="woocommerce-js" defer data-wp-strategy="defer"></script>
+<script type="text/javascript" src="/wp-content/plugins/wpbakery-page-builder-7.9/assets/js/vendors/woocommerce-add-to-cart.js?ver=7.9" id="vc_woocommerce-add-to-cart-js-js"></script>
+<script></script><link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/product/5257">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+
+<link rel="canonical" href="/product/mc210cs/">
+<link rel="shortlink" href="/?p=5257">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fproduct%2Fmc210cs%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fproduct%2Fmc210cs%2F#038;format=xml">
+<meta name="generator" content="Redux 4.5.6">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N84FL4C8');</script>
+<!-- End Google Tag Manager --><!-- Head & Footer Code: Site-wide HEAD section start (product) -->
+ <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-996326883"></script>
+<script>window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-996326883');</script>
+<!-- Head & Footer Code: Site-wide HEAD section end (product) -->
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
+<style type="text/css" id="custom-background-css">body.custom-background { background-color: #ffffff; }</style>
+	<meta name="generator" content="Powered by Slider Revolution 6.6.14 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+<style class="wp-fonts-local" type="text/css">@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:fallback;src:url('/wp-content/plugins/woocommerce/assets/fonts/Inter-VariableFont_slnt,wght.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Cardo;font-style:normal;font-weight:400;font-display:fallback;src:url('/wp-content/plugins/woocommerce/assets/fonts/cardo_normal_400.woff2') format('woff2');}</style>
+<script>function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
+<style type="text/css">.footer-call-us .call-us-icon i,
+        .header-support-info .support-icon i,
+        .header-support-inner .support-icon,
+        .widget_electro_products_filter .widget_layered_nav li > a:hover::before,
+        .widget_electro_products_filter .widget_layered_nav li > a:focus::before,
+        .widget_electro_products_filter .widget_product_categories li > a:hover::before,
+        .widget_electro_products_filter .widget_product_categories li > a:focus::before,
+        .widget_electro_products_filter .widget_layered_nav li.chosen > a::before,
+        .widget_electro_products_filter .widget_product_categories li.current-cat > a::before,
+        .features-list .media-left i,
+        .secondary-nav>.dropdown.open >a::before,
+        .secondary-nav>.dropdown.show >a::before,
+        p.stars a,
+        .top-bar.top-bar-v1 #menu-top-bar-left.nav-inline .menu-item > a i,
+        .handheld-footer .handheld-footer-bar .footer-call-us .call-us-text span,
+        .footer-v2 .handheld-footer .handheld-footer-bar .footer-call-us .call-us-text span,
+        .top-bar .menu-item.customer-support i,
+        .header-v13 .primary-nav-menu .nav-inline>.menu-item>a:hover,
+        .header-v13 .primary-nav-menu .nav-inline>.dropdown:hover > a,
+        .header-v13 .off-canvas-navigation-wrapper .navbar-toggler:hover,
+        .header-v13 .off-canvas-navigation-wrapper button:hover,
+        .header-v13 .off-canvas-navigation-wrapper.toggled .navbar-toggler:hover,
+        .header-v13 .off-canvas-navigation-wrapper.toggled button:hover {
+            color: #750182;
+        }
+
+        .header-logo svg ellipse,
+        .footer-logo svg ellipse{
+            fill:#750182;
+        }
+
+        .primary-nav .nav-inline > .menu-item .dropdown-menu,
+        .primary-nav-menu .nav-inline > .menu-item .dropdown-menu,
+        .navbar-primary .navbar-nav > .menu-item .dropdown-menu,
+        .vertical-menu .menu-item-has-children > .dropdown-menu,
+        .departments-menu .menu-item-has-children:hover > .dropdown-menu,
+        .top-bar .nav-inline > .menu-item .dropdown-menu,
+        .secondary-nav>.dropdown .dropdown-menu,
+        .header-v6 .vertical-menu .list-group-item > .dropdown-menu,
+        .best-selling-menu .nav-item>ul>li.electro-more-menu-item .dropdown-menu,
+        .home-v5-slider .tp-tab.selected .tp-tab-title:before,
+        .home-v5-slider .tp-tab.selected .tp-tab-title:after,
+        .header-v5 .electro-navigation .departments-menu-v2>.dropdown>.dropdown-menu,
+        .product-categories-list-with-header.v2 header .caption .section-title:after,
+        .primary-nav-menu .nav-inline >.menu-item .dropdown-menu,
+        .dropdown-menu-mini-cart,
+        .dropdown-menu-user-account,
+        .electro-navbar-primary .nav>.menu-item.menu-item-has-children .dropdown-menu,
+        .header-v6 .header-logo-area .departments-menu-v2 .departments-menu-v2-title+.dropdown-menu,
+        .departments-menu-v2 .departments-menu-v2-title+.dropdown-menu li.menu-item-has-children .dropdown-menu,
+        .secondary-nav-v6 .secondary-nav-v6-inner .sub-menu,
+        .secondary-nav-v6 .widget_nav_menu .sub-menu {
+            border-top-color: #750182;
+        }
+
+        .columns-6-1 > ul.products > li.product .thumbnails > a:hover,
+        .primary-nav .nav-inline .yamm-fw.open > a::before,
+        .columns-6-1>ul.products.product-main-6-1 .electro-wc-product-gallery__wrapper .electro-wc-product-gallery__image.flex-active-slide img,
+        .single-product .electro-wc-product-gallery .electro-wc-product-gallery__wrapper .electro-wc-product-gallery__image.flex-active-slide img,
+        .products-6-1-with-categories-inner .product-main-6-1 .images .thumbnails a:hover,
+        .home-v5-slider .tp-tab.selected .tp-tab-title:after,
+        .electro-navbar .departments-menu-v2 .departments-menu-v2-title+.dropdown-menu li.menu-item-has-children>.dropdown-menu,
+        .product-main-6-1 .thumbnails>a:focus, .product-main-6-1 .thumbnails>a:hover,
+        .product-main-6-1 .thumbnails>a:focus, .product-main-6-1 .thumbnails>a:focus,
+        .product-main-6-1 .thumbnails>a:focus>img, .product-main-6-1 .thumbnails>a:hover>img,
+        .product-main-6-1 .thumbnails>a:focus>img, .product-main-6-1 .thumbnails>a:focus>img {
+            border-bottom-color: #750182;
+        }
+
+        .navbar-primary,
+        .footer-newsletter,
+        .button:hover::before,
+        li.product:hover .button::before,
+        li.product:hover .added_to_cart::before,
+        .owl-item .product:hover .button::before,
+        .owl-item .product:hover .added_to_cart::before,
+        .widget_price_filter .ui-slider .ui-slider-handle,
+        .woocommerce-pagination ul.page-numbers > li a.current,
+        .woocommerce-pagination ul.page-numbers > li span.current,
+        .pagination ul.page-numbers > li a.current,
+        .pagination ul.page-numbers > li span.current,
+        .owl-dots .owl-dot.active,
+        .products-carousel-tabs .nav-link.active::before,
+        .deal-progress .progress-bar,
+        .products-2-1-2 .nav-link.active::before,
+        .products-4-1-4 .nav-link.active::before,
+        .da .da-action > a::after,
+        .header-v1 .navbar-search .input-group .btn,
+        .header-v3 .navbar-search .input-group .btn,
+        .header-v6 .navbar-search .input-group .btn,
+        .header-v8 .navbar-search .input-group .btn,
+        .header-v9 .navbar-search .input-group .btn,
+        .header-v10 .navbar-search .input-group .btn,
+        .header-v11 .navbar-search .input-group-btn .btn,
+        .header-v12 .navbar-search .input-group .btn,
+        .vertical-menu > li:first-child,
+        .widget.widget_tag_cloud .tagcloud a:hover,
+        .widget.widget_tag_cloud .tagcloud a:focus,
+        .navbar-mini-cart .cart-items-count,
+        .navbar-compare .count,
+        .navbar-wishlist .count,
+        .wc-tabs > li.active a::before,
+        .ec-tabs > li.active a::before,
+        .woocommerce-info,
+        .woocommerce-noreviews,
+        p.no-comments,
+        .products-2-1-2 .nav-link:hover::before,
+        .products-4-1-4 .nav-link:hover::before,
+        .single_add_to_cart_button,
+        .section-onsale-product-carousel .onsale-product-carousel .onsale-product .onsale-product-content .deal-cart-button .button,
+        .section-onsale-product-carousel .onsale-product-carousel .onsale-product .onsale-product-content .deal-cart-button .added_to_cart,
+        .wpb-accordion .vc_tta.vc_general .vc_tta-panel.vc_active .vc_tta-panel-heading .vc_tta-panel-title > a i,
+        ul.products > li.product.list-view:not(.list-view-small) .button:hover,
+        ul.products > li.product.list-view:not(.list-view-small) .button:focus,
+        ul.products > li.product.list-view:not(.list-view-small) .button:active,
+        ul.products > li.product.list-view.list-view-small .button:hover::after,
+        ul.products > li.product.list-view.list-view-small .button:focus::after,
+        ul.products > li.product.list-view.list-view-small .button:active::after,
+        .widget_electro_products_carousel_widget .section-products-carousel .owl-nav .owl-prev:hover,
+        .widget_electro_products_carousel_widget .section-products-carousel .owl-nav .owl-next:hover,
+        .full-color-background .header-v3,
+        .full-color-background .header-v4,
+        .full-color-background .top-bar,
+        .top-bar-v3,
+        .pace .pace-progress,
+        .electro-handheld-footer-bar ul li a .count,
+        .handheld-navigation-wrapper .stuck .navbar-toggler,
+        .handheld-navigation-wrapper .stuck button,
+        .handheld-navigation-wrapper.toggled .stuck .navbar-toggler,
+        .handheld-navigation-wrapper.toggled .stuck button,
+        .da .da-action>a::after,
+        .demo_store,
+        .header-v5 .header-top,
+        .handheld-header-v2,
+        .handheld-header-v2.stuck,
+        #payment .place-order button[type=submit],
+        .single-product .product-images-wrapper .woocommerce-product-gallery.electro-carousel-loaded .flex-control-nav li a.flex-active,
+        .single-product .product-images-wrapper .electro-wc-product-gallery .flex-control-nav li a.flex-active,
+        .single-product .product-images-wrapper .flex-control-nav li a.flex-active,
+        .section-onsale-product .savings,
+        .section-onsale-product-carousel .savings,
+        .columns-6-1>ul.products.product-main-6-1>li.product .electro-wc-product-gallery .flex-control-nav li a.flex-active,
+        .products-carousel-tabs-v5 header ul.nav-inline .nav-link.active,
+        .products-carousel-tabs-with-deal header ul.nav-inline .nav-link.active,
+        section .deals-carousel-inner-block .onsale-product .onsale-product-content .deal-cart-button .added_to_cart,
+        section .deals-carousel-inner-block .onsale-product .onsale-product-content .deal-cart-button .button,
+        .header-icon-counter,
+        .electro-navbar,
+        .departments-menu-v2-title,
+        section .deals-carousel-inner-block .onsale-product .onsale-product-content .deal-cart-button .added_to_cart,
+        section .deals-carousel-inner-block .onsale-product .onsale-product-content .deal-cart-button .button,
+        .deal-products-with-featured header,
+        .deal-products-with-featured ul.products > li.product.product-featured .savings,
+        .mobile-header-v2,
+        .mobile-header-v2.stuck,
+        .product-categories-list-with-header.v2 header .caption .section-title,
+        .product-categories-list-with-header.v2 header .caption .section-title,
+        .home-mobile-v2-features-block,
+        .show-nav .nav .nav-item.active .nav-link,
+        .header-v5,
+        .header-v5 .stuck,
+        .electro-navbar-primary,
+        .navbar-search-input-group .navbar-search-button,
+        .da-block .da-action::after,
+        .products-6-1 header.show-nav ul.nav .nav-item.active .nav-link,
+        ul.products[data-view=list-view].columns-1>li.product .product-loop-footer .button,
+        ul.products[data-view=list-view].columns-2>li.product .product-loop-footer .button,
+        ul.products[data-view=list-view].columns-3>li.product .product-loop-footer .button,
+        ul.products[data-view=list-view].columns-4>li.product .product-loop-footer .button,
+        ul.products[data-view=list-view].columns-5>li.product .product-loop-footer .button,
+        ul.products[data-view=list-view].columns-6>li.product .product-loop-footer .button,
+        ul.products[data-view=list-view].columns-7>li.product .product-loop-footer .button,
+        ul.products[data-view=list-view].columns-8>li.product .product-loop-footer .button,
+        ul.products[data-view=list-view]>li.product .product-item__footer .add-to-cart-wrap a,
+        .products.show-btn>li.product .added_to_cart,
+        .products.show-btn>li.product .button,
+        .yith-wcqv-button,
+        .header-v7 .masthead,
+        .header-v10 .secondary-nav-menu,
+        section.category-icons-carousel-v2,
+        .category-icons-carousel .category a:hover .category-icon,
+        .products-carousel-banner-vertical-tabs .banners-tabs>.nav a.active,
+        .products-carousel-with-timer .deal-countdown-timer,
+        .section-onsale-product-carousel-v9 .onsale-product .deal-countdown-timer,
+        .dokan-elector-style-active.store-v1 .profile-frame + .dokan-store-tabs > ul li.active a:after,
+        .dokan-elector-style-active.store-v5 .profile-frame + .dokan-store-tabs > ul li.active a:after,
+        .aws-container .aws-search-form .aws-search-clear,
+        div.wpforms-container-full .wpforms-form input[type=submit],
+        div.wpforms-container-full .wpforms-form button[type=submit],
+        div.wpforms-container-full .wpforms-form .wpforms-page-button,
+        .electro-dark .full-color-background .masthead .navbar-search .input-group .btn,
+        .electro-dark .electro-navbar-primary .nav>.menu-item:hover>a,
+        .electro-dark .masthead .navbar-search .input-group .btn {
+            background-color: #750182;
+        }
+
+        .electro-navbar .departments-menu-v2 .departments-menu-v2-title+.dropdown-menu li.menu-item-has-children>.dropdown-menu,
+        .products-carousel-banner-vertical-tabs .banners-tabs>.nav a.active::before {
+            border-right-color: #750182;
+        }
+
+        .hero-action-btn:hover {
+            background-color: #6c0178 !important;
+        }
+
+        .hero-action-btn,
+        #scrollUp,
+        .custom .tp-bullet.selected,
+        .home-v1-slider .btn-primary,
+        .home-v2-slider .btn-primary,
+        .home-v3-slider .btn-primary,
+        .electro-dark .show-nav .nav .active .nav-link,
+        .electro-dark .full-color-background .masthead .header-icon-counter,
+        .electro-dark .full-color-background .masthead .navbar-search .input-group .btn,
+        .electro-dark .electro-navbar-primary .nav>.menu-item:hover>a,
+        .electro-dark .masthead .navbar-search .input-group .btn,
+        .home-v13-hero-search .woocommerce-product-search button {
+            background-color: #750182 !important;
+        }
+
+        .departments-menu .departments-menu-dropdown,
+        .departments-menu .menu-item-has-children > .dropdown-menu,
+        .widget_price_filter .ui-slider .ui-slider-handle:last-child,
+        section header h1::after,
+        section header .h1::after,
+        .products-carousel-tabs .nav-link.active::after,
+        section.section-product-cards-carousel header ul.nav .active .nav-link,
+        section.section-onsale-product,
+        section.section-onsale-product-carousel .onsale-product-carousel,
+        .products-2-1-2 .nav-link.active::after,
+        .products-4-1-4 .nav-link.active::after,
+        .products-6-1 header ul.nav .active .nav-link,
+        .header-v1 .navbar-search .input-group .form-control,
+        .header-v1 .navbar-search .input-group .input-group-addon,
+        .header-v1 .navbar-search .input-group .btn,
+        .header-v3 .navbar-search .input-group .form-control,
+        .header-v3 .navbar-search .input-group .input-group-addon,
+        .header-v3 .navbar-search .input-group .btn,
+        .header-v6 .navbar-search .input-group .form-control,
+        .header-v6 .navbar-search .input-group .input-group-addon,
+        .header-v6 .navbar-search .input-group .btn,
+        .header-v8 .navbar-search .input-group .form-control,
+        .header-v8 .navbar-search .input-group .input-group-addon,
+        .header-v8 .navbar-search .input-group .btn,
+        .header-v9 .navbar-search .input-group .form-control,
+        .header-v9 .navbar-search .input-group .input-group-addon,
+        .header-v9 .navbar-search .input-group .btn,
+        .header-v10 .navbar-search .input-group .form-control,
+        .header-v10 .navbar-search .input-group .input-group-addon,
+        .header-v10 .navbar-search .input-group .btn,
+        .header-v12 .navbar-search .input-group .form-control,
+        .header-v12 .navbar-search .input-group .input-group-addon,
+        .header-v12 .navbar-search .input-group .btn,
+        .widget.widget_tag_cloud .tagcloud a:hover,
+        .widget.widget_tag_cloud .tagcloud a:focus,
+        .navbar-primary .navbar-mini-cart .dropdown-menu-mini-cart,
+        .woocommerce-checkout h3::after,
+        #customer_login h2::after,
+        .customer-login-form h2::after,
+        .navbar-primary .navbar-mini-cart .dropdown-menu-mini-cart,
+        .woocommerce-edit-address form h3::after,
+        .edit-account legend::after,
+        .woocommerce-account h2::after,
+        .address header.title h3::after,
+        .addresses header.title h3::after,
+        .woocommerce-order-received h2::after,
+        .track-order h2::after,
+        .wc-tabs > li.active a::after,
+        .ec-tabs > li.active a::after,
+        .comments-title::after,
+        .comment-reply-title::after,
+        .pings-title::after,
+        #reviews #comments > h2::after,
+        .single-product .woocommerce-tabs ~ div.products > h2::after,
+        .single-product .electro-tabs ~ div.products > h2::after,
+        .single-product .related>h2::after,
+        .single-product .up-sells>h2::after,
+        .cart-collaterals h2:not(.woocommerce-loop-product__title)::after,
+        .footer-widgets .widget-title:after,
+        .sidebar .widget-title::after,
+        .sidebar-blog .widget-title::after,
+        .contact-page-title::after,
+        #reviews:not(.electro-advanced-reviews) #comments > h2::after,
+        .cpf-type-range .tm-range-picker .noUi-origin .noUi-handle,
+        .widget_electro_products_carousel_widget .section-products-carousel .owl-nav .owl-prev:hover,
+        .widget_electro_products_carousel_widget .section-products-carousel .owl-nav .owl-next:hover,
+        .wpb-accordion .vc_tta.vc_general .vc_tta-panel.vc_active .vc_tta-panel-heading .vc_tta-panel-title > a i,
+        .single-product .woocommerce-tabs+section.products>h2::after,
+        #payment .place-order button[type=submit],
+        .single-product .electro-tabs+section.products>h2::after,
+        .deal-products-carousel .deal-products-carousel-inner .deal-products-timer header .section-title:after,
+        .deal-products-carousel .deal-products-carousel-inner .deal-countdown > span,
+        .deals-carousel-inner-block .onsale-product .onsale-product-content .deal-countdown > span,
+        .home-v5-slider .section-onsale-product-v2 .onsale-product .onsale-product-content .deal-countdown > span,
+        .products-with-category-image header ul.nav-inline .active .nav-link,
+        .products-6-1-with-categories header ul.nav-inline .active .nav-link,
+        .products-carousel-tabs-v5 header ul.nav-inline .nav-link:hover,
+        .products-carousel-tabs-with-deal header ul.nav-inline .nav-link:hover,
+        section.products-carousel-v5 header .nav-inline .active .nav-link,
+        .mobile-header-v1 .site-search .widget.widget_product_search form,
+        .mobile-header-v1 .site-search .widget.widget_search form,
+        .show-nav .nav .nav-item.active .nav-link,
+        .departments-menu-v2 .departments-menu-v2-title+.dropdown-menu,
+        .navbar-search-input-group .search-field,
+        .navbar-search-input-group .custom-select,
+        .products-6-1 header.show-nav ul.nav .nav-item.active .nav-link,
+        .header-v1 .aws-container .aws-search-field,
+        .header-v3 .aws-container .aws-search-field,
+        .header-v6 .aws-container .aws-search-field,
+        .header-v8 .aws-container .aws-search-field,
+        div.wpforms-container-full .wpforms-form input[type=submit],
+        div.wpforms-container-full .wpforms-form button[type=submit],
+        div.wpforms-container-full .wpforms-form .wpforms-page-button,
+        .electro-dark .electro-navbar .navbar-search .input-group .btn,
+        .electro-dark .masthead .navbar-search .input-group .btn,
+        .home-v13-vertical-menu .vertical-menu-title .title::after {
+            border-color: #750182;
+        }
+
+        @media (min-width: 1480px) {
+            .onsale-product-carousel .onsale-product__inner {
+        		border-color: #750182;
+        	}
+        }
+
+        .widget_price_filter .price_slider_amount .button,
+        .dropdown-menu-mini-cart .wc-forward.checkout,
+        table.cart .actions .checkout-button,
+        .cart-collaterals .cart_totals .wc-proceed-to-checkout a,
+        .customer-login-form .button,
+        .btn-primary,
+        input[type="submit"],
+        input.dokan-btn-theme[type="submit"],
+        a.dokan-btn-theme, .dokan-btn-theme,
+        .sign-in-button,
+        .products-carousel-banner-vertical-tabs .banners-tabs .tab-content-inner>a,
+        .dokan-store-support-and-follow-wrap .dokan-btn {
+          color: #ffffff;
+          background-color: #750182;
+          border-color: #750182;
+        }
+
+        .widget_price_filter .price_slider_amount .button:hover,
+        .dropdown-menu-mini-cart .wc-forward.checkout:hover,
+        table.cart .actions .checkout-button:hover,
+        .customer-login-form .button:hover,
+        .btn-primary:hover,
+        input[type="submit"]:hover,
+        input.dokan-btn-theme[type="submit"]:hover,
+        a.dokan-btn-theme:hover, .dokan-btn-theme:hover,
+        .sign-in-button:hover,
+        .products-carousel-banner-vertical-tabs .banners-tabs .tab-content-inner>a:hover,
+        .dokan-store-support-and-follow-wrap .dokan-btn:hover {
+          color: #fff;
+          background-color: #000000;
+          border-color: #000000;
+        }
+
+        .widget_price_filter .price_slider_amount .button:focus, .widget_price_filter .price_slider_amount .button.focus,
+        .dropdown-menu-mini-cart .wc-forward.checkout:focus,
+        .dropdown-menu-mini-cart .wc-forward.checkout.focus,
+        table.cart .actions .checkout-button:focus,
+        table.cart .actions .checkout-button.focus,
+        .customer-login-form .button:focus,
+        .customer-login-form .button.focus,
+        .btn-primary:focus,
+        .btn-primary.focus,
+        input[type="submit"]:focus,
+        input[type="submit"].focus,
+        input.dokan-btn-theme[type="submit"]:focus,
+        input.dokan-btn-theme[type="submit"].focus,
+        a.dokan-btn-theme:focus,
+        a.dokan-btn-theme.focus, .dokan-btn-theme:focus, .dokan-btn-theme.focus,
+        .sign-in-button:focus,
+        .products-carousel-banner-vertical-tabs .banners-tabs .tab-content-inner>a:focus,
+        .dokan-store-support-and-follow-wrap .dokan-btn:focus {
+          color: #fff;
+          background-color: #000000;
+          border-color: #000000;
+        }
+
+        .widget_price_filter .price_slider_amount .button:active, .widget_price_filter .price_slider_amount .button.active, .open > .widget_price_filter .price_slider_amount .button.dropdown-toggle,
+        .dropdown-menu-mini-cart .wc-forward.checkout:active,
+        .dropdown-menu-mini-cart .wc-forward.checkout.active, .open >
+        .dropdown-menu-mini-cart .wc-forward.checkout.dropdown-toggle,
+        table.cart .actions .checkout-button:active,
+        table.cart .actions .checkout-button.active, .open >
+        table.cart .actions .checkout-button.dropdown-toggle,
+        .customer-login-form .button:active,
+        .customer-login-form .button.active, .open >
+        .customer-login-form .button.dropdown-toggle,
+        .btn-primary:active,
+        .btn-primary.active, .open >
+        .btn-primary.dropdown-toggle,
+        input[type="submit"]:active,
+        input[type="submit"].active, .open >
+        input[type="submit"].dropdown-toggle,
+        input.dokan-btn-theme[type="submit"]:active,
+        input.dokan-btn-theme[type="submit"].active, .open >
+        input.dokan-btn-theme[type="submit"].dropdown-toggle,
+        a.dokan-btn-theme:active,
+        a.dokan-btn-theme.active, .open >
+        a.dokan-btn-theme.dropdown-toggle, .dokan-btn-theme:active, .dokan-btn-theme.active, .open > .dokan-btn-theme.dropdown-toggle {
+          color: #ffffff;
+          background-color: #000000;
+          border-color: #000000;
+          background-image: none;
+        }
+
+        .widget_price_filter .price_slider_amount .button:active:hover, .widget_price_filter .price_slider_amount .button:active:focus, .widget_price_filter .price_slider_amount .button:active.focus, .widget_price_filter .price_slider_amount .button.active:hover, .widget_price_filter .price_slider_amount .button.active:focus, .widget_price_filter .price_slider_amount .button.active.focus, .open > .widget_price_filter .price_slider_amount .button.dropdown-toggle:hover, .open > .widget_price_filter .price_slider_amount .button.dropdown-toggle:focus, .open > .widget_price_filter .price_slider_amount .button.dropdown-toggle.focus,
+        .dropdown-menu-mini-cart .wc-forward.checkout:active:hover,
+        .dropdown-menu-mini-cart .wc-forward.checkout:active:focus,
+        .dropdown-menu-mini-cart .wc-forward.checkout:active.focus,
+        .dropdown-menu-mini-cart .wc-forward.checkout.active:hover,
+        .dropdown-menu-mini-cart .wc-forward.checkout.active:focus,
+        .dropdown-menu-mini-cart .wc-forward.checkout.active.focus, .open >
+        .dropdown-menu-mini-cart .wc-forward.checkout.dropdown-toggle:hover, .open >
+        .dropdown-menu-mini-cart .wc-forward.checkout.dropdown-toggle:focus, .open >
+        .dropdown-menu-mini-cart .wc-forward.checkout.dropdown-toggle.focus,
+        table.cart .actions .checkout-button:active:hover,
+        table.cart .actions .checkout-button:active:focus,
+        table.cart .actions .checkout-button:active.focus,
+        table.cart .actions .checkout-button.active:hover,
+        table.cart .actions .checkout-button.active:focus,
+        table.cart .actions .checkout-button.active.focus, .open >
+        table.cart .actions .checkout-button.dropdown-toggle:hover, .open >
+        table.cart .actions .checkout-button.dropdown-toggle:focus, .open >
+        table.cart .actions .checkout-button.dropdown-toggle.focus,
+        .customer-login-form .button:active:hover,
+        .customer-login-form .button:active:focus,
+        .customer-login-form .button:active.focus,
+        .customer-login-form .button.active:hover,
+        .customer-login-form .button.active:focus,
+        .customer-login-form .button.active.focus, .open >
+        .customer-login-form .button.dropdown-toggle:hover, .open >
+        .customer-login-form .button.dropdown-toggle:focus, .open >
+        .customer-login-form .button.dropdown-toggle.focus,
+        .btn-primary:active:hover,
+        .btn-primary:active:focus,
+        .btn-primary:active.focus,
+        .btn-primary.active:hover,
+        .btn-primary.active:focus,
+        .btn-primary.active.focus, .open >
+        .btn-primary.dropdown-toggle:hover, .open >
+        .btn-primary.dropdown-toggle:focus, .open >
+        .btn-primary.dropdown-toggle.focus,
+        input[type="submit"]:active:hover,
+        input[type="submit"]:active:focus,
+        input[type="submit"]:active.focus,
+        input[type="submit"].active:hover,
+        input[type="submit"].active:focus,
+        input[type="submit"].active.focus, .open >
+        input[type="submit"].dropdown-toggle:hover, .open >
+        input[type="submit"].dropdown-toggle:focus, .open >
+        input[type="submit"].dropdown-toggle.focus,
+        input.dokan-btn-theme[type="submit"]:active:hover,
+        input.dokan-btn-theme[type="submit"]:active:focus,
+        input.dokan-btn-theme[type="submit"]:active.focus,
+        input.dokan-btn-theme[type="submit"].active:hover,
+        input.dokan-btn-theme[type="submit"].active:focus,
+        input.dokan-btn-theme[type="submit"].active.focus, .open >
+        input.dokan-btn-theme[type="submit"].dropdown-toggle:hover, .open >
+        input.dokan-btn-theme[type="submit"].dropdown-toggle:focus, .open >
+        input.dokan-btn-theme[type="submit"].dropdown-toggle.focus,
+        a.dokan-btn-theme:active:hover,
+        a.dokan-btn-theme:active:focus,
+        a.dokan-btn-theme:active.focus,
+        a.dokan-btn-theme.active:hover,
+        a.dokan-btn-theme.active:focus,
+        a.dokan-btn-theme.active.focus, .open >
+        a.dokan-btn-theme.dropdown-toggle:hover, .open >
+        a.dokan-btn-theme.dropdown-toggle:focus, .open >
+        a.dokan-btn-theme.dropdown-toggle.focus, .dokan-btn-theme:active:hover, .dokan-btn-theme:active:focus, .dokan-btn-theme:active.focus, .dokan-btn-theme.active:hover, .dokan-btn-theme.active:focus, .dokan-btn-theme.active.focus, .open > .dokan-btn-theme.dropdown-toggle:hover, .open > .dokan-btn-theme.dropdown-toggle:focus, .open > .dokan-btn-theme.dropdown-toggle.focus {
+          color: #ffffff;
+          background-color: #4d0156;
+          border-color: #3b0141;
+        }
+
+        .widget_price_filter .price_slider_amount .button.disabled:focus, .widget_price_filter .price_slider_amount .button.disabled.focus, .widget_price_filter .price_slider_amount .button:disabled:focus, .widget_price_filter .price_slider_amount .button:disabled.focus,
+        .dropdown-menu-mini-cart .wc-forward.checkout.disabled:focus,
+        .dropdown-menu-mini-cart .wc-forward.checkout.disabled.focus,
+        .dropdown-menu-mini-cart .wc-forward.checkout:disabled:focus,
+        .dropdown-menu-mini-cart .wc-forward.checkout:disabled.focus,
+        table.cart .actions .checkout-button.disabled:focus,
+        table.cart .actions .checkout-button.disabled.focus,
+        table.cart .actions .checkout-button:disabled:focus,
+        table.cart .actions .checkout-button:disabled.focus,
+        .customer-login-form .button.disabled:focus,
+        .customer-login-form .button.disabled.focus,
+        .customer-login-form .button:disabled:focus,
+        .customer-login-form .button:disabled.focus,
+        .btn-primary.disabled:focus,
+        .btn-primary.disabled.focus,
+        .btn-primary:disabled:focus,
+        .btn-primary:disabled.focus,
+        input[type="submit"].disabled:focus,
+        input[type="submit"].disabled.focus,
+        input[type="submit"]:disabled:focus,
+        input[type="submit"]:disabled.focus,
+        input.dokan-btn-theme[type="submit"].disabled:focus,
+        input.dokan-btn-theme[type="submit"].disabled.focus,
+        input.dokan-btn-theme[type="submit"]:disabled:focus,
+        input.dokan-btn-theme[type="submit"]:disabled.focus,
+        a.dokan-btn-theme.disabled:focus,
+        a.dokan-btn-theme.disabled.focus,
+        a.dokan-btn-theme:disabled:focus,
+        a.dokan-btn-theme:disabled.focus, .dokan-btn-theme.disabled:focus, .dokan-btn-theme.disabled.focus, .dokan-btn-theme:disabled:focus, .dokan-btn-theme:disabled.focus {
+          background-color: #750182;
+          border-color: #750182;
+        }
+
+        .widget_price_filter .price_slider_amount .button.disabled:hover, .widget_price_filter .price_slider_amount .button:disabled:hover,
+        .dropdown-menu-mini-cart .wc-forward.checkout.disabled:hover,
+        .dropdown-menu-mini-cart .wc-forward.checkout:disabled:hover,
+        table.cart .actions .checkout-button.disabled:hover,
+        table.cart .actions .checkout-button:disabled:hover,
+        .customer-login-form .button.disabled:hover,
+        .customer-login-form .button:disabled:hover,
+        .btn-primary.disabled:hover,
+        .btn-primary:disabled:hover,
+        input[type="submit"].disabled:hover,
+        input[type="submit"]:disabled:hover,
+        input.dokan-btn-theme[type="submit"].disabled:hover,
+        input.dokan-btn-theme[type="submit"]:disabled:hover,
+        a.dokan-btn-theme.disabled:hover,
+        a.dokan-btn-theme:disabled:hover, .dokan-btn-theme.disabled:hover, .dokan-btn-theme:disabled:hover {
+          background-color: #750182;
+          border-color: #750182;
+        }
+
+        .navbar-primary .navbar-nav > .menu-item > a:hover,
+        .navbar-primary .navbar-nav > .menu-item > a:focus,
+        .electro-navbar-primary .nav>.menu-item>a:focus,
+        .electro-navbar-primary .nav>.menu-item>a:hover  {
+            background-color: #6c0178;
+        }
+
+        .navbar-primary .navbar-nav > .menu-item > a {
+            border-color: #6c0178;
+        }
+
+        .full-color-background .navbar-primary,
+        .header-v4 .electro-navbar-primary,
+        .header-v4 .electro-navbar-primary {
+            border-top-color: #6c0178;
+        }
+
+        .full-color-background .top-bar .nav-inline .menu-item+.menu-item:before {
+            color: #6c0178;
+        }
+
+        .electro-navbar-primary .nav>.menu-item+.menu-item>a,
+        .home-mobile-v2-features-block .features-list .feature+.feature .media {
+            border-left-color: #6c0178;
+        }
+
+        .header-v5 .vertical-menu .list-group-item>.dropdown-menu {
+            border-top-color: #750182;
+        }
+
+        .single-product div.thumbnails-all .synced a,
+        .woocommerce-product-gallery .flex-control-thumbs li img.flex-active,
+        .columns-6-1>ul.products.product-main-6-1 .flex-control-thumbs li img.flex-active,
+        .products-2-1-2 .nav-link:hover::after,
+        .products-4-1-4 .nav-link:hover::after,
+        .section-onsale-product-carousel .onsale-product-carousel .onsale-product .onsale-product-thumbnails .images .thumbnails a.current,
+        .dokan-elector-style-active.store-v1 .profile-frame + .dokan-store-tabs > ul li.active a,
+        .dokan-elector-style-active.store-v5 .profile-frame + .dokan-store-tabs > ul li.active a {
+            border-bottom-color: #750182;
+        }
+
+        .home-v1-slider .btn-primary:hover,
+        .home-v2-slider .btn-primary:hover,
+        .home-v3-slider .btn-primary:hover {
+            background-color: #6c0178 !important;
+        }
+
+
+        /*........Dokan.......*/
+
+        .dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li.active,
+        .dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li:hover,
+        .dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li:focus,
+        .dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li.dokan-common-links a:hover,
+        .dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li.dokan-common-links a:focus,
+        .dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li.dokan-common-links a.active,
+        .dokan-store .pagination-wrap ul.pagination > li a.current,
+        .dokan-store .pagination-wrap ul.pagination > li span.current,
+        .dokan-dashboard .pagination-wrap ul.pagination > li a.current,
+        .dokan-dashboard .pagination-wrap ul.pagination > li span.current,
+        .dokan-pagination-container ul.dokan-pagination > li.active > a,
+        .dokan-coupon-content .code:hover,
+        .dokan-report-wrap ul.dokan_tabs > li.active a::before,
+        .dokan-dashboard-header h1.entry-title span.dokan-right a.dokan-btn.dokan-btn-sm {
+            background-color: #750182;
+        }
+
+        .dokan-widget-area .widget .widget-title:after,
+        .dokan-report-wrap ul.dokan_tabs > li.active a::after,
+        .dokan-dashboard-header h1.entry-title span.dokan-right a.dokan-btn.dokan-btn-sm,
+        .dokan-store-sidebar .widget-store-owner .widget-title:after {
+            border-color: #750182;
+        }
+
+        .electro-tabs #tab-seller.electro-tab .tab-content ul.list-unstyled li.seller-name span.details a,
+        .dokan-dashboard-header h1.entry-title small a,
+        .dokan-orders-content .dokan-orders-area .general-details ul.customer-details li a{
+            color: #750182;
+        }
+
+        .dokan-dashboard-header h1.entry-title small a:hover,
+        .dokan-dashboard-header h1.entry-title small a:focus {
+            color: #6c0178;
+        }
+
+        .dokan-store-support-and-follow-wrap .dokan-btn {
+            color: #ffffff!important;
+            background-color: #750182!important;
+        }
+
+        .dokan-store-support-and-follow-wrap .dokan-btn:hover {
+            color: #ebebeb!important;
+            background-color: #6c0178!important;
+        }
+
+        .header-v1 .navbar-search .input-group .btn,
+        .header-v1 .navbar-search .input-group .hero-action-btn,
+        .header-v3 .navbar-search .input-group .btn,
+        .header-v3 .navbar-search .input-group .hero-action-btn,
+        .header-v6 .navbar-search .input-group .btn,
+        .header-v8 .navbar-search .input-group .btn,
+        .header-v9 .navbar-search .input-group .btn,
+        .header-v10 .navbar-search .input-group .btn,
+        .header-v12 .navbar-search .input-group .btn,
+        .navbar-mini-cart .cart-items-count,
+        .navbar-compare .count,
+        .navbar-wishlist .count,
+        .navbar-primary a[data-bs-toggle=dropdown]::after,
+        .navbar-primary .navbar-nav .nav-link,
+        .vertical-menu>li.list-group-item>a,
+        .vertical-menu>li.list-group-item>span,
+        .vertical-menu>li.list-group-item.dropdown>a[data-bs-toggle=dropdown-hover],
+        .vertical-menu>li.list-group-item.dropdown>a[data-bs-toggle=dropdown],
+        .departments-menu>.nav-item .nav-link,
+        .customer-login-form .button,
+        .dropdown-menu-mini-cart .wc-forward.checkout,
+        .widget_price_filter .price_slider_amount .button,
+        input[type=submit],
+        table.cart .actions .checkout-button,
+        .pagination ul.page-numbers>li a.current,
+        .pagination ul.page-numbers>li span.current,
+        .woocommerce-pagination ul.page-numbers>li a.current,
+        .woocommerce-pagination ul.page-numbers>li span.current,
+        .footer-newsletter .newsletter-title::before,
+        .footer-newsletter .newsletter-marketing-text,
+        .footer-newsletter .newsletter-title,
+        .top-bar-v3 .nav-inline .menu-item>a,
+        .top-bar-v3 .menu-item.customer-support.menu-item>a i,
+        .top-bar-v3 .additional-links-label,
+        .full-color-background .top-bar .nav-inline .menu-item>a,
+        .full-color-background .top-bar .nav-inline .menu-item+.menu-item:before,
+        .full-color-background .header-v1 .navbar-nav .nav-link,
+        .full-color-background .header-v3 .navbar-nav .nav-link,
+        .full-color-background .navbar-primary .navbar-nav>.menu-item>a,
+        .full-color-background .navbar-primary .navbar-nav>.menu-item>a:focus,
+        .full-color-background .navbar-primary .navbar-nav>.menu-item>a:hover,
+        .woocommerce-info,
+        .woocommerce-noreviews,
+        p.no-comments,
+        .woocommerce-info a,
+        .woocommerce-info button,
+        .woocommerce-noreviews a,
+        .woocommerce-noreviews button,
+        p.no-comments a,
+        p.no-comments button,
+        .navbar-primary .navbar-nav > .menu-item >a,
+        .navbar-primary .navbar-nav > .menu-item >a:hover,
+        .navbar-primary .navbar-nav > .menu-item >a:focus,
+        .demo_store,
+        .header-v5 .masthead .header-icon>a,
+        .header-v4 .masthead .header-icon>a,
+        .departments-menu-v2-title,
+        .departments-menu-v2-title:focus,
+        .departments-menu-v2-title:hover,
+        .electro-navbar .header-icon>a,
+        .section-onsale-product .savings,
+        .section-onsale-product-carousel .savings,
+        .electro-navbar-primary .nav>.menu-item>a,
+        .header-icon .header-icon-counter,
+        .header-v6 .navbar-search .input-group .btn,
+        .products-carousel-tabs-v5 header .nav-link.active,
+        #payment .place-order .button,
+        .deal-products-with-featured header h2,
+        .deal-products-with-featured ul.products>li.product.product-featured .savings,
+        .deal-products-with-featured header h2:after,
+        .deal-products-with-featured header .deal-countdown-timer,
+        .deal-products-with-featured header .deal-countdown-timer:before,
+        .product-categories-list-with-header.v2 header .caption .section-title,
+        .home-mobile-v2-features-block .features-list .media-left i,
+        .home-mobile-v2-features-block .features-list .feature,
+        .handheld-header-v2 .handheld-header-links .columns-3 a,
+        .handheld-header-v2 .off-canvas-navigation-wrapper .navbar-toggler,
+        .handheld-header-v2 .off-canvas-navigation-wrapper button,
+        .handheld-header-v2 .off-canvas-navigation-wrapper.toggled .navbar-toggler,
+        .handheld-header-v2 .off-canvas-navigation-wrapper.toggled button,
+        .mobile-header-v2 .handheld-header-links .columns-3 a,
+        .mobile-header-v2 .off-canvas-navigation-wrapper .navbar-toggler,
+        .mobile-header-v2 .off-canvas-navigation-wrapper button,
+        .mobile-header-v2 .off-canvas-navigation-wrapper.toggled .navbar-toggler,
+        .mobile-header-v2 .off-canvas-navigation-wrapper.toggled button,
+        .mobile-handheld-department ul.nav li a,
+        .header-v5 .handheld-header-v2 .handheld-header-links .cart .count,
+        .yith-wcqv-button,
+        .home-vertical-nav.departments-menu-v2 .vertical-menu-title a,
+        .products-carousel-with-timer .deal-countdown-timer,
+        .demo_store a,
+        div.wpforms-container-full .wpforms-form input[type=submit],
+        div.wpforms-container-full .wpforms-form button[type=submit],
+        div.wpforms-container-full .wpforms-form .wpforms-page-button,
+        .aws-search-form:not(.aws-form-active):not(.aws-processing) .aws-search-clear::after {
+            color: #ffffff;
+        }
+
+        .woocommerce-info a:focus,
+        .woocommerce-info a:hover,
+        .woocommerce-info button:focus,
+        .woocommerce-info button:hover,
+        .woocommerce-noreviews a:focus,
+        .woocommerce-noreviews a:hover,
+        .woocommerce-noreviews button:focus,
+        .woocommerce-noreviews button:hover,
+        p.no-comments a:focus,
+        p.no-comments a:hover,
+        p.no-comments button:focus,
+        p.no-comments button:hover,
+        .vertical-menu>li.list-group-item.dropdown>a[data-bs-toggle=dropdown-hover]:hover,
+        .vertical-menu>li.list-group-item.dropdown>a[data-bs-toggle=dropdown]:hover,
+        .vertical-menu>li.list-group-item.dropdown>a[data-bs-toggle=dropdown-hover]:focus,
+        .vertical-menu>li.list-group-item.dropdown>a[data-bs-toggle=dropdown]:focus {
+            color: #f5f5f5;
+        }
+
+        .full-color-background .header-logo path {
+            fill:#ffffff;
+        }
+
+        .home-v1-slider .btn-primary,
+        .home-v2-slider .btn-primary,
+        .home-v3-slider .btn-primary,
+        .home-v1-slider .btn-primary:hover,
+        .home-v2-slider .btn-primary:hover,
+        .home-v3-slider .btn-primary:hover,
+        .handheld-navigation-wrapper .stuck .navbar-toggler,
+        .handheld-navigation-wrapper .stuck button,
+        .handheld-navigation-wrapper.toggled .stuck .navbar-toggler,
+        .handheld-navigation-wrapper.toggled .stuck button,
+        .header-v5 .masthead .header-icon>a:hover,
+        .header-v5 .masthead .header-icon>a:focus,
+        .header-v5 .masthead .header-logo-area .navbar-toggler,
+        .header-v4 .off-canvas-navigation-wrapper .navbar-toggler,
+        .header-v4 .off-canvas-navigation-wrapper button,
+        .header-v4 .off-canvas-navigation-wrapper.toggled .navbar-toggler,
+        .header-v4 .off-canvas-navigation-wrapper.toggled button,
+        .products-carousel-tabs-v5 header .nav-link.active,
+        .products-carousel-tabs-with-deal header .nav-link.active {
+            color: #ffffff !important;
+        }
+
+        @media (max-width: 575.98px) {
+          .electro-wc-product-gallery .electro-wc-product-gallery__image.flex-active-slide a {
+                background-color: #750182 !important;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .show-nav .nav .nav-item.active .nav-link {
+                color: #ffffff;
+            }
+        }</style>		<style type="text/css" id="wp-custom-css">@media only screen and (max-width: 600px) {
+.top-bar .nav-inline>.menu-item+.menu-item:before {
+	display:  none!important;
+}
+
+.top-bar .nav-inline .menu-item {
+    margin: 0 auto;
+}
+}	
+
+span.navbar-toggler-icon {
+    background-color: #FFFFFF!important;
+}
+
+.deal-products-carousel .deal-products-timer header .h1 {
+    font-size: 2.25em;
+    color: #008fd7!important; 
+}
+
+.electro-navbar-primary .nav>.menu-item>a {
+    padding: .786em .79em;
+}</style>
+		<noscript><style>.wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
+</head>
+
+<body class="product-template-default single single-product postid-5257 custom-background theme-electro woocommerce woocommerce-page woocommerce-demo-store woocommerce-no-js full-width normal wpb-js-composer js-comp-ver-7.9 vc_responsive">
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N84FL4C8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><div class="off-canvas-wrapper w-100 position-relative">
+<div id="page" class="hfeed site">
+			<a class="skip-link screen-reader-text visually-hidden" href="#site-navigation">Skip to navigation</a>
+		<a class="skip-link screen-reader-text visually-hidden" href="#content">Skip to content</a>
+		
+			
+		<div class="top-bar">
+			<div class="container clearfix">
+			<ul id="menu-top-bar-right" class="nav nav-inline float-end electro-animate-dropdown flip">
+<li id="menu-item-4467" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4467"><a title="314 7908511" href="#"><i class="fa fa-mobile"></i>314 7908511</a></li>
+<li id="menu-item-4468" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4468"><a title="lpinnovamedellin@gmail.com" href="#"><i class="fa fa-envelope"></i>lpinnovamedellin@gmail.com</a></li>
+</ul>			</div>
+		</div>
+<!-- /.top-bar -->
+
+			
+	
+	<header id="masthead" class="site-header header-v3 stick-this">
+		<div class="container hidden-lg-down d-none d-xl-block">
+					<div class="masthead row align-items-center">
+				<div class="header-logo-area d-flex justify-content-between align-items-center">
+					<div class="header-site-branding">
+				<a href="/" class="header-logo-link">
+					<img src="/wp-content/uploads/2023/01/LOGOPAGINAWEB-removebg-preview.png" alt="LP Innova" class="img-header-logo" width="521" height="285">
+				</a>
+			</div>
+					<div class="off-canvas-navigation-wrapper ">
+			<div class="off-canvas-navbar-toggle-buttons clearfix">
+				<button class="navbar-toggler navbar-toggle-hamburger " type="button">
+					<i class="ec ec-menu"></i>
+				</button>
+				<button class="navbar-toggler navbar-toggle-close " type="button">
+					<i class="ec ec-close-remove"></i>
+				</button>
+			</div>
+
+			<div class="off-canvas-navigation
+							 light" id="default-oc-header">
+							</div>
+		</div>
+				</div>
+		
+<form class="navbar-search col" method="get" action="/" autocomplete="off">
+	<label class="sr-only screen-reader-text visually-hidden" for="search">Search for:</label>
+	<div class="input-group">
+		<div class="input-search-field">
+			<input type="text" id="search" class="form-control search-field product-search-field" dir="ltr" value="" name="s" placeholder="Busca nuestros productos" autocomplete="off">
+		</div>
+				<div class="input-group-addon search-categories d-flex">
+			<select name="product_cat" id="electro_header_search_categories_dropdown" class="postform resizeselect">
+	<option value="0" selected>Todas las categorias</option>
+	<option class="level-0" value="ubiquiti">UBIQUITI</option>
+	<option class="level-0" value="tp-link">TP-LINK</option>
+	<option class="level-0" value="mikrotik">MIKROTIK</option>
+	<option class="level-0" value="tenda">TENDA</option>
+	<option class="level-0" value="mimosa">Mimosa</option>
+	<option class="level-0" value="cambium">Cambium</option>
+	<option class="level-0" value="aruba">ARUBA</option>
+	<option class="level-0" value="ruijie">RUIJIE</option>
+	<option class="level-0" value="alg-com">ALG COM</option>
+</select>
+		</div>
+				<div class="input-group-btn">
+			<input type="hidden" id="search-param" name="post_type" value="product">
+			<button type="submit" class="btn btn-secondary"><i class="ec ec-search"></i></button>
+		</div>
+	</div>
+	</form>
+		<div class="header-icons col-auto d-flex justify-content-end align-items-center">
+		<div class="header-icon header-icon__user-account dropdown animate-dropdown" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="My Account">
+            <a class="dropdown-toggle" href="/mi-cuenta/" data-bs-toggle="dropdown"><i class="ec ec-user"></i></a>
+            <ul class="dropdown-menu dropdown-menu-user-account">
+                                <li>
+                                        <div class="register-sign-in-dropdown-inner">
+                        <div class="sign-in">
+                            <p>Returning Customer ?</p>
+                            <div class="sign-in-action"><a href="/mi-cuenta/" class="sign-in-button">Sign in</a></div>
+                        </div>
+                        <div class="register">
+                            <p>Don&#039;t have an account ?</p>
+                            <div class="register-action"><a href="/mi-cuenta/">Register</a></div>
+                        </div>
+                    </div>
+                                    </li>
+                            </ul>
+        </div>
+<div class="header-icon header-icon__cart animate-dropdown dropdown" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Cart">
+            <a class="dropdown-toggle" href="/cart/" data-bs-toggle="dropdown">
+                <i class="ec ec-add-to-cart"></i>
+                <span class="cart-items-count count header-icon-counter">0</span>
+                <span class="cart-items-total-price total-price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>0.00</bdi></span></span>
+            </a>
+                                <ul class="dropdown-menu dropdown-menu-mini-cart border-bottom-0-last-child">
+                        <li>
+                            <div class="widget_shopping_cart_content border-bottom-0-last-child">
+                              
+
+	<p class="woocommerce-mini-cart__empty-message">No products in the cart.</p>
+
+
+                            </div>
+                        </li>
+                    </ul>        </div>		</div>
+<!-- /.header-icons -->
+				</div>
+		<div class="electro-navbar-primary electro-animate-dropdown">
+		<div class="container"><ul id="menu-principal" class="nav navbar-nav yamm">
+<li id="menu-item-4558" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4558"><a title="¿Quiénes somos?" href="/quienes-somos/">¿Quiénes somos?</a></li>
+<li id="menu-item-4560" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-4560"><a title="Productos" href="/shop/">Productos</a></li>
+<li id="menu-item-4478" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4478"><a title="MIKROTIK" href="/product-category/mikrotik/">MIKROTIK</a></li>
+<li id="menu-item-4477" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4477"><a title="UBIQUITI" href="/product-category/ubiquiti/">UBIQUITI</a></li>
+<li id="menu-item-4589" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4589"><a title="TENDA" href="/product-category/tenda/">TENDA</a></li>
+<li id="menu-item-5407" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat current-product-ancestor current-menu-parent current-product-parent menu-item-5407"><a title="TP-LINK" href="/product-category/tp-link/">TP-LINK</a></li>
+<li id="menu-item-4807" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4807"><a title="MIMOSA" href="/product-category/mimosa/">MIMOSA</a></li>
+<li id="menu-item-5417" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5417"><a title="ARUBA" href="/product-category/aruba/">ARUBA</a></li>
+<li id="menu-item-4808" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4808"><a title="CAMBIUM" href="/product-category/cambium/">CAMBIUM</a></li>
+<li id="menu-item-5441" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5441"><a title="RUIJIE" href="/product-category/ruijie/">RUIJIE</a></li>
+<li id="menu-item-5440" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5440"><a title="ALG COM" href="/product-category/alg-com/">ALG COM</a></li>
+<li id="menu-item-4546" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4546"><a title="Contáctanos" href="/contactanos/">Contáctanos</a></li>
+</ul></div>		</div>
+		
+		</div>
+
+					<div class="handheld-header-wrap container hidden-xl-up d-xl-none">
+				<div class="handheld-header-v2 row align-items-center handheld-stick-this ">
+							<div class="off-canvas-navigation-wrapper ">
+			<div class="off-canvas-navbar-toggle-buttons clearfix">
+				<button class="navbar-toggler navbar-toggle-hamburger " type="button">
+					<i class="ec ec-menu"></i>
+				</button>
+				<button class="navbar-toggler navbar-toggle-close " type="button">
+					<i class="ec ec-close-remove"></i>
+				</button>
+			</div>
+
+			<div class="off-canvas-navigation
+							 light" id="default-oc-header">
+							</div>
+		</div>
+		            <div class="header-logo">
+                <a href="/" class="header-logo-link">
+                    <img src="/wp-content/uploads/2023/01/LOGOPAGINAWEB-removebg-preview.png" alt="LP Innova" class="img-header-logo" width="521" height="285">
+                </a>
+            </div>
+            		<div class="handheld-header-links">
+			<ul class="columns-3">
+									<li class="search">
+						<a>Search</a>			<div class="site-search">
+				<div class="widget woocommerce widget_product_search">
+<form role="search" method="get" class="woocommerce-product-search" action="/">
+	<label class="screen-reader-text" for="woocommerce-product-search-field-0">Search for:</label>
+	<input type="search" id="woocommerce-product-search-field-0" class="search-field" placeholder="Search products&hellip;" value="" name="s">
+	<button type="submit" value="Search" class="">Search</button>
+	<input type="hidden" name="post_type" value="product">
+</form>
+</div>			</div>
+							</li>
+									<li class="my-account">
+						<a href="/mi-cuenta/"><i class="ec ec-user"></i></a>					</li>
+									<li class="cart">
+									<a class="footer-cart-contents" href="/cart/" title="View your shopping cart">
+				<i class="ec ec-add-to-cart"></i>
+				<span class="cart-items-count count">0</span>
+			</a>
+								</li>
+							</ul>
+		</div>
+						</div>
+			</div>
+			
+	</header><!-- #masthead -->
+
+	
+	
+	<div id="content" class="site-content" tabindex="-1">
+		<div class="container">
+		<nav class="woocommerce-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span class="delimiter"><i class="fa fa-angle-right"></i></span><a href="/product-category/tp-link/">TP-LINK</a><span class="delimiter"><i class="fa fa-angle-right"></i></span>MC210CS</nav><div class="site-content-inner row">
+		
+			<div id="primary" class="content-area">
+			<main id="main" class="site-main">
+			
+					
+			<div class="woocommerce-notices-wrapper"></div>
+<div id="product-5257" class="product type-product post-5257 status-publish first instock product_cat-tp-link has-post-thumbnail shipping-taxable product-type-simple">
+
+			<div class="single-product-wrapper row">
+				<div class="product-images-wrapper">
+		<div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-5 images electro-carousel-loaded" data-columns="5" style="opacity: 0; transition: opacity .25s ease-in-out;">
+	<div class="woocommerce-product-gallery__wrapper">
+		<div data-thumb="/wp-content/uploads/2023/01/MC210CS-100x100.jpg" data-thumb-alt="MC210CS" data-thumb-srcset="/wp-content/uploads/2023/01/MC210CS-100x100.jpg 100w, /wp-content/uploads/2023/01/MC210CS-377x377.jpg 377w" data-thumb-sizes="(max-width: 100px) 100vw, 100px" class="woocommerce-product-gallery__image"><a href="/wp-content/uploads/2023/01/MC210CS.jpg"><img width="300" height="225" src="/wp-content/uploads/2023/01/MC210CS-300x225.jpg" class="wp-post-image" alt="MC210CS" data-caption="" data-src="/wp-content/uploads/2023/01/MC210CS.jpg" data-large_image="/wp-content/uploads/2023/01/MC210CS.jpg" data-large_image_width="960" data-large_image_height="720" decoding="async" fetchpriority="high" srcset="/wp-content/uploads/2023/01/MC210CS-300x225.jpg 300w, /wp-content/uploads/2023/01/MC210CS.jpg 960w" sizes="(max-width: 300px) 100vw, 300px"></a></div>	</div>
+</div>
+		</div>
+<!-- /.product-images-wrapper -->
+		
+	<div class="summary entry-summary">
+		<span class="loop-product-categories"><a href="/product-category/tp-link/" rel="tag">TP-LINK</a></span><h1 class="product_title entry-title">MC210CS</h1>		<hr class="single-product-title-divider">
+		<div class="action-buttons"></div>
+<div class="woocommerce-product-details__short-description">
+	<p>Convertidor Multimedia de Modo Individual de Gigabit</p>
+</div>
+<p class="price"><span class="electro-price"></span></p>
+	</div>
+
+			</div>
+<!-- /.single-product-wrapper -->
+		
+	<div class="woocommerce-tabs wc-tabs-wrapper">
+		<ul class="tabs wc-tabs" role="tablist">
+							<li class="description_tab" id="tab-title-description">
+					<a href="#tab-description" role="tab" aria-controls="tab-description">
+						Description					</a>
+				</li>
+					</ul>
+					<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab" id="tab-description" role="tabpanel" aria-labelledby="tab-title-description">
+				<div class="electro-description clearfix">
+
+<p>Convertidor Multimedia de Modo Individual de Gigabit<br>
+&#8211; Compatible con IEEE 802.3ab y 802.3z IEEE<br>
+&#8211; Proporciona configuración del switch de la fuerza / el modo automático de transferencia de puertos FX.<br>
+&#8211; Amplía la distancia de fibra de hasta 15 km</p>
+<p><strong>Para qué sirve este producto</strong><br>
+El MC210CS es un conversor de medios diseñado para convertir el cable de fibra 1000BASE-LX/LH a cable de cobre 1000Base-T o viceversa. El MC210CS está diseñado conforme a los estándares IEEE802.3ab, 1000Base-T, IEEE802.3z y 1000Base-LX/LH. Puede usarse con cable de fibra multimodo utilizando un conector tipo SC. El MC210CS soporta la especificación de láser de onda larga (LX) a la máxima velocidad de transmisión. Funciona a 1310 nm tanto en el envío como en la recepción de datos.</p>
+<p>Otras de las funcionalidades de este módulo incluyen la posibilidad de utilizarse como un dispositivo por sí mismo (sin necesidad de carcasa) o con un chasis de 19&#8243; de TP-LINK. Además, detecta automáticamente el modo MDI/MDI-X para el puerto TX e incluye leds de estado en un panel frontal. El MC210CS amplía la distancia de la transmisión óptica hasta 15 kilómetros al utilizar fibra monomodo.</p>
+</div>
+<div class="product_meta">
+
+	
+	
+	<span class="posted_in">Category: <a href="/product-category/tp-link/" rel="tag">TP-LINK</a></span>
+	
+	
+</div>
+			</div>
+		
+			</div>
+
+
+	<section class="related products">
+
+					<h2>Related products</h2>
+				<ul data-view="grid" data-bs-toggle="regular-products" class="products products list-unstyled row g-0 row-cols-2 row-cols-md-3 row-cols-lg-5 row-cols-xl-5 row-cols-xxl-5">
+			
+					<li class="product type-product post-5201 status-publish first instock product_cat-tp-link has-post-thumbnail shipping-taxable product-type-simple">
+	<div class="product-outer product-item__outer">
+<div class="product-inner product-item__inner">
+<div class="product-loop-header product-item__header">
+<span class="loop-product-categories"><a href="/product-category/tp-link/" rel="tag">TP-LINK</a></span><a href="/product/deco-m52-pack/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><h2 class="woocommerce-loop-product__title">Deco M5(2-pack)</h2>
+<div class="product-thumbnail product-item__thumbnail"><img width="377" height="377" src="/wp-content/uploads/2023/01/Deco-M5_2-pack_V2.0_01_large_1539683164223l-377x377.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""></div></a>
+</div>
+<!-- /.product-loop-header --><div class="product-loop-body product-item__body">
+<span class="loop-product-categories"><a href="/product-category/tp-link/" rel="tag">TP-LINK</a></span><a href="/product/deco-m52-pack/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><h2 class="woocommerce-loop-product__title">Deco M5(2-pack)</h2>		<div class="product-short-description">
+			<p>Sistema Wi-Fi en malla para todo el hogar AC1300</p>
+		</div>
+				<div class="product-sku">SKU: n/a</div></a>
+</div>
+<!-- /.product-loop-body --><div class="product-loop-footer product-item__footer">
+<div class="price-add-to-cart">
+	<span class="price"><span class="electro-price"></span></span>
+<div class="add-to-cart-wrap" data-bs-toggle="tooltip" data-bs-title="Read more"><a href="/product/deco-m52-pack/" aria-describedby="woocommerce_loop_add_to_cart_link_describedby_5201" data-quantity="1" class="button product_type_simple" data-product_id="5201" data-product_sku="" aria-label="Read more about &ldquo;Deco M5(2-pack)&rdquo;" rel="nofollow" data-success_message="">Read more</a></div>	<span id="woocommerce_loop_add_to_cart_link_describedby_5201" class="screen-reader-text">
+			</span>
+</div>
+<!-- /.price-add-to-cart --><div class="spoki-shadowed-button"><div class="spoki-button-relative " id="" style="margin-top:4px;margin-bottom:4px;margin-left:0px;margin-right:0px;">
+<a href="https://app.spoki.it/fw/?type=2&#038;phone=%2B573147908511&#038;text=Hi%252C%2BI%2Bwant%2Bto%2Bbuy%253A%250D%250A%250D%250A%28ID%3A%25205201%29%2520%2ADeco%2BM5%25282-pack%2529%2A%2520%26%2336%3B0.00%250D%250Ahttps%253A%252F%252Ffun-catfish-salamander.jurassic.ninja%252Fproduct%252Fdeco-m52-pack%252F&#038;furl=" target="_blank" rel="nofollow" title="Escríbenos por Whatsapp Deco M5(2-pack)" class="button spoki-button product_type_simple size-4" style="background-color:#23d366;border-radius:16px;font-size:12px;padding-top:8px;padding-bottom:8px;padding-left:14px;padding-right:14px;">
+<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 682 682" style="enable-background:new 0 0 682 682;height:16px;width:16px;" xml:space="preserve">
+<style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}</style>
+<path class="st0" d="M567.2,113.9C507.3,54,427.8,21,343,21C168.4,21,26.3,163.1,26.2,337.8c0,55.8,14.6,110.3,42.3,158.4
+L23.6,660.4l168-44.1c46.3,25.2,98.4,38.5,151.4,38.6h0.1c174.6,0,316.8-142.1,316.8-316.8C659.9,253.4,627,173.8,567.2,113.9z
+M343,601.4h-0.1c-47.3,0-93.6-12.7-134-36.7l-9.6-5.7l-99.7,26.1l26.6-97.2l-6.3-10C93.6,436,79.7,387.6,79.7,337.8
+C79.8,192.6,197.9,74.5,343.2,74.5c70.3,0,136.5,27.4,186.2,77.2s77.1,115.9,77.1,186.3C606.3,483.2,488.2,601.4,343,601.4z
+M487.5,404.1c-7.9-4-46.8-23.1-54.1-25.8c-7.3-2.6-12.5-4-17.8,4c-5.3,7.9-20.4,25.8-25.1,31c-4.6,5.3-9.2,5.9-17.2,2
+c-7.9-4-33.4-12.3-63.7-39.3c-23.5-21-39.4-46.9-44-54.8c-4.6-7.9,0-11.8,3.5-16.2c8.6-10.6,17.2-21.8,19.8-27.1
+c2.6-5.3,1.3-9.9-0.7-13.9c-2-4-17.8-42.9-24.4-58.8c-6.4-15.4-13-13.3-17.8-13.6c-4.6-0.2-9.9-0.3-15.2-0.3c-5.3,0-13.9,2-21.1,9.9
+c-7.3,7.9-27.7,27.1-27.7,66s28.4,76.6,32.3,81.9c4,5.3,55.8,85.2,135.2,119.5c18.9,8.2,33.6,13,45.1,16.7c19,6,36.2,5.2,49.9,3.1
+c15.2-2.3,46.8-19.2,53.4-37.6c6.6-18.5,6.6-34.3,4.6-37.6C500.7,410.1,495.4,408.1,487.5,404.1z"></path>
+</svg><span>Escríbenos por Whatsapp</span></a><style></style>
+</div></div>
+<div class="hover-area"><div class="action-buttons"></div></div>
+</div>
+<!-- /.product-loop-footer -->
+</div>
+<!-- /.product-inner -->
+</div>
+<!-- /.product-outer -->
+</li>
+
+			
+					<li class="product type-product post-5163 status-publish instock product_cat-tp-link has-post-thumbnail shipping-taxable product-type-simple">
+	<div class="product-outer product-item__outer">
+<div class="product-inner product-item__inner">
+<div class="product-loop-header product-item__header">
+<span class="loop-product-categories"><a href="/product-category/tp-link/" rel="tag">TP-LINK</a></span><a href="/product/tl-sg1048/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><h2 class="woocommerce-loop-product__title">TL-SG1048</h2>
+<div class="product-thumbnail product-item__thumbnail"><img width="377" height="377" src="/wp-content/uploads/2023/01/TL-SG1048_UN_6.0_02_1499780792116a-377x377.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""></div></a>
+</div>
+<!-- /.product-loop-header --><div class="product-loop-body product-item__body">
+<span class="loop-product-categories"><a href="/product-category/tp-link/" rel="tag">TP-LINK</a></span><a href="/product/tl-sg1048/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><h2 class="woocommerce-loop-product__title">TL-SG1048</h2>		<div class="product-short-description">
+			<p>Gigabit Switch de 48 puertos</p>
+		</div>
+				<div class="product-sku">SKU: n/a</div></a>
+</div>
+<!-- /.product-loop-body --><div class="product-loop-footer product-item__footer">
+<div class="price-add-to-cart">
+	<span class="price"><span class="electro-price"></span></span>
+<div class="add-to-cart-wrap" data-bs-toggle="tooltip" data-bs-title="Read more"><a href="/product/tl-sg1048/" aria-describedby="woocommerce_loop_add_to_cart_link_describedby_5163" data-quantity="1" class="button product_type_simple" data-product_id="5163" data-product_sku="" aria-label="Read more about &ldquo;TL-SG1048&rdquo;" rel="nofollow" data-success_message="">Read more</a></div>	<span id="woocommerce_loop_add_to_cart_link_describedby_5163" class="screen-reader-text">
+			</span>
+</div>
+<!-- /.price-add-to-cart --><div class="spoki-shadowed-button"><div class="spoki-button-relative " id="" style="margin-top:4px;margin-bottom:4px;margin-left:0px;margin-right:0px;">
+<a href="https://app.spoki.it/fw/?type=2&#038;phone=%2B573147908511&#038;text=Hi%252C%2BI%2Bwant%2Bto%2Bbuy%253A%250D%250A%250D%250A%28ID%3A%25205163%29%2520%2ATL-SG1048%2A%2520%26%2336%3B0.00%250D%250Ahttps%253A%252F%252Ffun-catfish-salamander.jurassic.ninja%252Fproduct%252Ftl-sg1048%252F&#038;furl=" target="_blank" rel="nofollow" title="Escríbenos por Whatsapp TL-SG1048" class="button spoki-button product_type_simple size-4" style="background-color:#23d366;border-radius:16px;font-size:12px;padding-top:8px;padding-bottom:8px;padding-left:14px;padding-right:14px;">
+<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 682 682" style="enable-background:new 0 0 682 682;height:16px;width:16px;" xml:space="preserve">
+<style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}</style>
+<path class="st0" d="M567.2,113.9C507.3,54,427.8,21,343,21C168.4,21,26.3,163.1,26.2,337.8c0,55.8,14.6,110.3,42.3,158.4
+L23.6,660.4l168-44.1c46.3,25.2,98.4,38.5,151.4,38.6h0.1c174.6,0,316.8-142.1,316.8-316.8C659.9,253.4,627,173.8,567.2,113.9z
+M343,601.4h-0.1c-47.3,0-93.6-12.7-134-36.7l-9.6-5.7l-99.7,26.1l26.6-97.2l-6.3-10C93.6,436,79.7,387.6,79.7,337.8
+C79.8,192.6,197.9,74.5,343.2,74.5c70.3,0,136.5,27.4,186.2,77.2s77.1,115.9,77.1,186.3C606.3,483.2,488.2,601.4,343,601.4z
+M487.5,404.1c-7.9-4-46.8-23.1-54.1-25.8c-7.3-2.6-12.5-4-17.8,4c-5.3,7.9-20.4,25.8-25.1,31c-4.6,5.3-9.2,5.9-17.2,2
+c-7.9-4-33.4-12.3-63.7-39.3c-23.5-21-39.4-46.9-44-54.8c-4.6-7.9,0-11.8,3.5-16.2c8.6-10.6,17.2-21.8,19.8-27.1
+c2.6-5.3,1.3-9.9-0.7-13.9c-2-4-17.8-42.9-24.4-58.8c-6.4-15.4-13-13.3-17.8-13.6c-4.6-0.2-9.9-0.3-15.2-0.3c-5.3,0-13.9,2-21.1,9.9
+c-7.3,7.9-27.7,27.1-27.7,66s28.4,76.6,32.3,81.9c4,5.3,55.8,85.2,135.2,119.5c18.9,8.2,33.6,13,45.1,16.7c19,6,36.2,5.2,49.9,3.1
+c15.2-2.3,46.8-19.2,53.4-37.6c6.6-18.5,6.6-34.3,4.6-37.6C500.7,410.1,495.4,408.1,487.5,404.1z"></path>
+</svg><span>Escríbenos por Whatsapp</span></a><style></style>
+</div></div>
+<div class="hover-area"><div class="action-buttons"></div></div>
+</div>
+<!-- /.product-loop-footer -->
+</div>
+<!-- /.product-inner -->
+</div>
+<!-- /.product-outer -->
+</li>
+
+			
+					<li class="product type-product post-5167 status-publish instock product_cat-tp-link has-post-thumbnail shipping-taxable product-type-simple">
+	<div class="product-outer product-item__outer">
+<div class="product-inner product-item__inner">
+<div class="product-loop-header product-item__header">
+<span class="loop-product-categories"><a href="/product-category/tp-link/" rel="tag">TP-LINK</a></span><a href="/product/tl-sg1428pe/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><h2 class="woocommerce-loop-product__title">TL-SG1428PE</h2>
+<div class="product-thumbnail product-item__thumbnail"><img width="377" height="377" src="/wp-content/uploads/2023/01/02_large_1595821501455u-377x377.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy"></div></a>
+</div>
+<!-- /.product-loop-header --><div class="product-loop-body product-item__body">
+<span class="loop-product-categories"><a href="/product-category/tp-link/" rel="tag">TP-LINK</a></span><a href="/product/tl-sg1428pe/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><h2 class="woocommerce-loop-product__title">TL-SG1428PE</h2>		<div class="product-short-description">
+			<p>Conmutador inteligente fácil Gigabit de 28 puertos con PoE + de 24 puertos</p>
+		</div>
+				<div class="product-sku">SKU: n/a</div></a>
+</div>
+<!-- /.product-loop-body --><div class="product-loop-footer product-item__footer">
+<div class="price-add-to-cart">
+	<span class="price"><span class="electro-price"></span></span>
+<div class="add-to-cart-wrap" data-bs-toggle="tooltip" data-bs-title="Read more"><a href="/product/tl-sg1428pe/" aria-describedby="woocommerce_loop_add_to_cart_link_describedby_5167" data-quantity="1" class="button product_type_simple" data-product_id="5167" data-product_sku="" aria-label="Read more about &ldquo;TL-SG1428PE&rdquo;" rel="nofollow" data-success_message="">Read more</a></div>	<span id="woocommerce_loop_add_to_cart_link_describedby_5167" class="screen-reader-text">
+			</span>
+</div>
+<!-- /.price-add-to-cart --><div class="spoki-shadowed-button"><div class="spoki-button-relative " id="" style="margin-top:4px;margin-bottom:4px;margin-left:0px;margin-right:0px;">
+<a href="https://app.spoki.it/fw/?type=2&#038;phone=%2B573147908511&#038;text=Hi%252C%2BI%2Bwant%2Bto%2Bbuy%253A%250D%250A%250D%250A%28ID%3A%25205167%29%2520%2ATL-SG1428PE%2A%2520%26%2336%3B0.00%250D%250Ahttps%253A%252F%252Ffun-catfish-salamander.jurassic.ninja%252Fproduct%252Ftl-sg1428pe%252F&#038;furl=" target="_blank" rel="nofollow" title="Escríbenos por Whatsapp TL-SG1428PE" class="button spoki-button product_type_simple size-4" style="background-color:#23d366;border-radius:16px;font-size:12px;padding-top:8px;padding-bottom:8px;padding-left:14px;padding-right:14px;">
+<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 682 682" style="enable-background:new 0 0 682 682;height:16px;width:16px;" xml:space="preserve">
+<style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}</style>
+<path class="st0" d="M567.2,113.9C507.3,54,427.8,21,343,21C168.4,21,26.3,163.1,26.2,337.8c0,55.8,14.6,110.3,42.3,158.4
+L23.6,660.4l168-44.1c46.3,25.2,98.4,38.5,151.4,38.6h0.1c174.6,0,316.8-142.1,316.8-316.8C659.9,253.4,627,173.8,567.2,113.9z
+M343,601.4h-0.1c-47.3,0-93.6-12.7-134-36.7l-9.6-5.7l-99.7,26.1l26.6-97.2l-6.3-10C93.6,436,79.7,387.6,79.7,337.8
+C79.8,192.6,197.9,74.5,343.2,74.5c70.3,0,136.5,27.4,186.2,77.2s77.1,115.9,77.1,186.3C606.3,483.2,488.2,601.4,343,601.4z
+M487.5,404.1c-7.9-4-46.8-23.1-54.1-25.8c-7.3-2.6-12.5-4-17.8,4c-5.3,7.9-20.4,25.8-25.1,31c-4.6,5.3-9.2,5.9-17.2,2
+c-7.9-4-33.4-12.3-63.7-39.3c-23.5-21-39.4-46.9-44-54.8c-4.6-7.9,0-11.8,3.5-16.2c8.6-10.6,17.2-21.8,19.8-27.1
+c2.6-5.3,1.3-9.9-0.7-13.9c-2-4-17.8-42.9-24.4-58.8c-6.4-15.4-13-13.3-17.8-13.6c-4.6-0.2-9.9-0.3-15.2-0.3c-5.3,0-13.9,2-21.1,9.9
+c-7.3,7.9-27.7,27.1-27.7,66s28.4,76.6,32.3,81.9c4,5.3,55.8,85.2,135.2,119.5c18.9,8.2,33.6,13,45.1,16.7c19,6,36.2,5.2,49.9,3.1
+c15.2-2.3,46.8-19.2,53.4-37.6c6.6-18.5,6.6-34.3,4.6-37.6C500.7,410.1,495.4,408.1,487.5,404.1z"></path>
+</svg><span>Escríbenos por Whatsapp</span></a><style></style>
+</div></div>
+<div class="hover-area"><div class="action-buttons"></div></div>
+</div>
+<!-- /.product-loop-footer -->
+</div>
+<!-- /.product-inner -->
+</div>
+<!-- /.product-outer -->
+</li>
+
+			
+					<li class="product type-product post-5179 status-publish instock product_cat-tp-link has-post-thumbnail shipping-taxable product-type-simple">
+	<div class="product-outer product-item__outer">
+<div class="product-inner product-item__inner">
+<div class="product-loop-header product-item__header">
+<span class="loop-product-categories"><a href="/product-category/tp-link/" rel="tag">TP-LINK</a></span><a href="/product/tl-sl1226p/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><h2 class="woocommerce-loop-product__title">TL-SL1226P</h2>
+<div class="product-thumbnail product-item__thumbnail"><img width="377" height="377" src="/wp-content/uploads/2023/01/01_large_1578918202414j-377x377.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy"></div></a>
+</div>
+<!-- /.product-loop-header --><div class="product-loop-body product-item__body">
+<span class="loop-product-categories"><a href="/product-category/tp-link/" rel="tag">TP-LINK</a></span><a href="/product/tl-sl1226p/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><h2 class="woocommerce-loop-product__title">TL-SL1226P</h2>		<div class="product-short-description">
+			<p>Switch 24-Puertos 10/100Mbps + 2-Port Gigabit PoE+ No Gestionable</p>
+		</div>
+				<div class="product-sku">SKU: n/a</div></a>
+</div>
+<!-- /.product-loop-body --><div class="product-loop-footer product-item__footer">
+<div class="price-add-to-cart">
+	<span class="price"><span class="electro-price"></span></span>
+<div class="add-to-cart-wrap" data-bs-toggle="tooltip" data-bs-title="Read more"><a href="/product/tl-sl1226p/" aria-describedby="woocommerce_loop_add_to_cart_link_describedby_5179" data-quantity="1" class="button product_type_simple" data-product_id="5179" data-product_sku="" aria-label="Read more about &ldquo;TL-SL1226P&rdquo;" rel="nofollow" data-success_message="">Read more</a></div>	<span id="woocommerce_loop_add_to_cart_link_describedby_5179" class="screen-reader-text">
+			</span>
+</div>
+<!-- /.price-add-to-cart --><div class="spoki-shadowed-button"><div class="spoki-button-relative " id="" style="margin-top:4px;margin-bottom:4px;margin-left:0px;margin-right:0px;">
+<a href="https://app.spoki.it/fw/?type=2&#038;phone=%2B573147908511&#038;text=Hi%252C%2BI%2Bwant%2Bto%2Bbuy%253A%250D%250A%250D%250A%28ID%3A%25205179%29%2520%2ATL-SL1226P%2A%2520%26%2336%3B0.00%250D%250Ahttps%253A%252F%252Ffun-catfish-salamander.jurassic.ninja%252Fproduct%252Ftl-sl1226p%252F&#038;furl=" target="_blank" rel="nofollow" title="Escríbenos por Whatsapp TL-SL1226P" class="button spoki-button product_type_simple size-4" style="background-color:#23d366;border-radius:16px;font-size:12px;padding-top:8px;padding-bottom:8px;padding-left:14px;padding-right:14px;">
+<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 682 682" style="enable-background:new 0 0 682 682;height:16px;width:16px;" xml:space="preserve">
+<style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}</style>
+<path class="st0" d="M567.2,113.9C507.3,54,427.8,21,343,21C168.4,21,26.3,163.1,26.2,337.8c0,55.8,14.6,110.3,42.3,158.4
+L23.6,660.4l168-44.1c46.3,25.2,98.4,38.5,151.4,38.6h0.1c174.6,0,316.8-142.1,316.8-316.8C659.9,253.4,627,173.8,567.2,113.9z
+M343,601.4h-0.1c-47.3,0-93.6-12.7-134-36.7l-9.6-5.7l-99.7,26.1l26.6-97.2l-6.3-10C93.6,436,79.7,387.6,79.7,337.8
+C79.8,192.6,197.9,74.5,343.2,74.5c70.3,0,136.5,27.4,186.2,77.2s77.1,115.9,77.1,186.3C606.3,483.2,488.2,601.4,343,601.4z
+M487.5,404.1c-7.9-4-46.8-23.1-54.1-25.8c-7.3-2.6-12.5-4-17.8,4c-5.3,7.9-20.4,25.8-25.1,31c-4.6,5.3-9.2,5.9-17.2,2
+c-7.9-4-33.4-12.3-63.7-39.3c-23.5-21-39.4-46.9-44-54.8c-4.6-7.9,0-11.8,3.5-16.2c8.6-10.6,17.2-21.8,19.8-27.1
+c2.6-5.3,1.3-9.9-0.7-13.9c-2-4-17.8-42.9-24.4-58.8c-6.4-15.4-13-13.3-17.8-13.6c-4.6-0.2-9.9-0.3-15.2-0.3c-5.3,0-13.9,2-21.1,9.9
+c-7.3,7.9-27.7,27.1-27.7,66s28.4,76.6,32.3,81.9c4,5.3,55.8,85.2,135.2,119.5c18.9,8.2,33.6,13,45.1,16.7c19,6,36.2,5.2,49.9,3.1
+c15.2-2.3,46.8-19.2,53.4-37.6c6.6-18.5,6.6-34.3,4.6-37.6C500.7,410.1,495.4,408.1,487.5,404.1z"></path>
+</svg><span>Escríbenos por Whatsapp</span></a><style></style>
+</div></div>
+<div class="hover-area"><div class="action-buttons"></div></div>
+</div>
+<!-- /.product-loop-footer -->
+</div>
+<!-- /.product-inner -->
+</div>
+<!-- /.product-outer -->
+</li>
+
+			
+					<li class="product type-product post-5195 status-publish last instock product_cat-tp-link has-post-thumbnail shipping-taxable product-type-simple">
+	<div class="product-outer product-item__outer">
+<div class="product-inner product-item__inner">
+<div class="product-loop-header product-item__header">
+<span class="loop-product-categories"><a href="/product-category/tp-link/" rel="tag">TP-LINK</a></span><a href="/product/eap610-outdoor/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><h2 class="woocommerce-loop-product__title">EAP610-Outdoor</h2>
+<div class="product-thumbnail product-item__thumbnail"><img width="377" height="377" src="/wp-content/uploads/2023/01/EAP610-OutdoorUN_1.0_WiFi_6_Outdoor_Access_Point_2.2_Outdoor_WiFi_large_1627383386188c-377x377.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy"></div></a>
+</div>
+<!-- /.product-loop-header --><div class="product-loop-body product-item__body">
+<span class="loop-product-categories"><a href="/product-category/tp-link/" rel="tag">TP-LINK</a></span><a href="/product/eap610-outdoor/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><h2 class="woocommerce-loop-product__title">EAP610-Outdoor</h2>		<div class="product-short-description">
+			<p>Punto de Acceso Wi-Fi 6 Interior / Exterior AX1800</p>
+		</div>
+				<div class="product-sku">SKU: n/a</div></a>
+</div>
+<!-- /.product-loop-body --><div class="product-loop-footer product-item__footer">
+<div class="price-add-to-cart">
+	<span class="price"><span class="electro-price"></span></span>
+<div class="add-to-cart-wrap" data-bs-toggle="tooltip" data-bs-title="Read more"><a href="/product/eap610-outdoor/" aria-describedby="woocommerce_loop_add_to_cart_link_describedby_5195" data-quantity="1" class="button product_type_simple" data-product_id="5195" data-product_sku="" aria-label="Read more about &ldquo;EAP610-Outdoor&rdquo;" rel="nofollow" data-success_message="">Read more</a></div>	<span id="woocommerce_loop_add_to_cart_link_describedby_5195" class="screen-reader-text">
+			</span>
+</div>
+<!-- /.price-add-to-cart --><div class="spoki-shadowed-button"><div class="spoki-button-relative " id="" style="margin-top:4px;margin-bottom:4px;margin-left:0px;margin-right:0px;">
+<a href="https://app.spoki.it/fw/?type=2&#038;phone=%2B573147908511&#038;text=Hi%252C%2BI%2Bwant%2Bto%2Bbuy%253A%250D%250A%250D%250A%28ID%3A%25205195%29%2520%2AEAP610-Outdoor%2A%2520%26%2336%3B0.00%250D%250Ahttps%253A%252F%252Ffun-catfish-salamander.jurassic.ninja%252Fproduct%252Feap610-outdoor%252F&#038;furl=" target="_blank" rel="nofollow" title="Escríbenos por Whatsapp EAP610-Outdoor" class="button spoki-button product_type_simple size-4" style="background-color:#23d366;border-radius:16px;font-size:12px;padding-top:8px;padding-bottom:8px;padding-left:14px;padding-right:14px;">
+<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 682 682" style="enable-background:new 0 0 682 682;height:16px;width:16px;" xml:space="preserve">
+<style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}</style>
+<path class="st0" d="M567.2,113.9C507.3,54,427.8,21,343,21C168.4,21,26.3,163.1,26.2,337.8c0,55.8,14.6,110.3,42.3,158.4
+L23.6,660.4l168-44.1c46.3,25.2,98.4,38.5,151.4,38.6h0.1c174.6,0,316.8-142.1,316.8-316.8C659.9,253.4,627,173.8,567.2,113.9z
+M343,601.4h-0.1c-47.3,0-93.6-12.7-134-36.7l-9.6-5.7l-99.7,26.1l26.6-97.2l-6.3-10C93.6,436,79.7,387.6,79.7,337.8
+C79.8,192.6,197.9,74.5,343.2,74.5c70.3,0,136.5,27.4,186.2,77.2s77.1,115.9,77.1,186.3C606.3,483.2,488.2,601.4,343,601.4z
+M487.5,404.1c-7.9-4-46.8-23.1-54.1-25.8c-7.3-2.6-12.5-4-17.8,4c-5.3,7.9-20.4,25.8-25.1,31c-4.6,5.3-9.2,5.9-17.2,2
+c-7.9-4-33.4-12.3-63.7-39.3c-23.5-21-39.4-46.9-44-54.8c-4.6-7.9,0-11.8,3.5-16.2c8.6-10.6,17.2-21.8,19.8-27.1
+c2.6-5.3,1.3-9.9-0.7-13.9c-2-4-17.8-42.9-24.4-58.8c-6.4-15.4-13-13.3-17.8-13.6c-4.6-0.2-9.9-0.3-15.2-0.3c-5.3,0-13.9,2-21.1,9.9
+c-7.3,7.9-27.7,27.1-27.7,66s28.4,76.6,32.3,81.9c4,5.3,55.8,85.2,135.2,119.5c18.9,8.2,33.6,13,45.1,16.7c19,6,36.2,5.2,49.9,3.1
+c15.2-2.3,46.8-19.2,53.4-37.6c6.6-18.5,6.6-34.3,4.6-37.6C500.7,410.1,495.4,408.1,487.5,404.1z"></path>
+</svg><span>Escríbenos por Whatsapp</span></a><style></style>
+</div></div>
+<div class="hover-area"><div class="action-buttons"></div></div>
+</div>
+<!-- /.product-loop-footer -->
+</div>
+<!-- /.product-inner -->
+</div>
+<!-- /.product-outer -->
+</li>
+
+			
+		</ul>
+
+	</section>
+	</div>
+
+
+		
+				</main><!-- #main -->
+		</div>
+<!-- #primary -->
+
+		
+	
+					</div>
+				</div>
+<!-- .col-full -->
+	</div>
+<!-- #content -->
+
+	
+	
+	<footer id="colophon" class="site-footer footer-v2">
+
+		<div class="desktop-footer d-none d-lg-block container">
+            
+        <div class="footer-bottom-widgets">
+            <div class="container">
+                <div class="footer-bottom-widgets-inner row">
+                                            <div class="footer-contact col-md-5">
+                            
+			<div class="footer-call-us">
+				<div class="media d-flex">
+					<span class="media-left call-us-icon media-middle"><i class="ec ec-support"></i></span>
+					<div class="media-body">
+						<span class="call-us-text">¿Tienes una duda? Llamanos o usa Whatsapp</span>
+						<span class="call-us-number">314 790 85 11</span>
+					</div>
+				</div>
+			</div>
+
+		                        </div>
+                                                                <div class="footer-bottom-widgets-menu col-md">
+                            <div class="footer-bottom-widgets-menu-inner row g-0 row-cols-xl-3">
+                                        <div class="columns">
+            <aside class="widget clearfix">
+                <div class="body">
+                    <h4 class="widget-title">
+                        Find it Fast                    </h4>
+                    <ul class="menu-find-it-fast menu">
+                    	<li class="cat-item cat-item-399">
+<a href="/product-category/alg-com/">ALG COM</a>
+</li>
+	<li class="cat-item cat-item-396">
+<a href="/product-category/aruba/">ARUBA</a>
+</li>
+	<li class="cat-item cat-item-382">
+<a href="/product-category/cambium/">Cambium</a>
+</li>
+	<li class="cat-item cat-item-65">
+<a href="/product-category/mikrotik/">MIKROTIK</a>
+</li>
+	<li class="cat-item cat-item-381">
+<a href="/product-category/mimosa/">Mimosa</a>
+</li>
+	<li class="cat-item cat-item-398">
+<a href="/product-category/ruijie/">RUIJIE</a>
+</li>
+	<li class="cat-item cat-item-277">
+<a href="/product-category/tenda/">TENDA</a>
+</li>
+	<li class="cat-item cat-item-64">
+<a href="/product-category/tp-link/">TP-LINK</a>
+</li>
+	<li class="cat-item cat-item-62">
+<a href="/product-category/ubiquiti/">UBIQUITI</a>
+</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="columns col"><aside class="widget clearfix"><div class="body">
+<h4 class="widget-title">&nbsp;</h4>
+		<ul>
+						<li><a href="/wp-login.php">Log in</a></li>
+			<li><a href="/feed/">Entries feed</a></li>
+			<li><a href="/comments/feed/">Comments feed</a></li>
+
+			<li><a href="https://wordpress.org/">WordPress.org</a></li>
+		</ul>
+
+		</div></aside></div>
+<div class="columns col"><aside class="widget clearfix"><div class="body">
+<h4 class="widget-title">Customer Care</h4>
+			<ul>
+				<li class="page_item page-item-4459"><a href="/4459-2/">#4459 (no title)</a></li>
+<li class="page_item page-item-2917"><a href="/airfiber/">AIRFIBER</a></li>
+<li class="page_item page-item-2919"><a href="/airvision/">AIRVISION</a></li>
+<li class="page_item page-item-1250"><a href="/cart/">Carro de compras</a></li>
+<li class="page_item page-item-4625"><a href="/comparar-productos/">Comparar productos</a></li>
+<li class="page_item page-item-4539"><a href="/contactanos/">Contáctanos</a></li>
+<li class="page_item page-item-2915"><a href="/edgemax/">EDGEMAX</a></li>
+<li class="page_item page-item-4511"><a href="/elementor-4511/">Elementor #4511</a></li>
+<li class="page_item page-item-4638"><a href="/gracias-por-su-orden/">Gracias por su orden!</a></li>
+<li class="page_item page-item-691"><a href="/home-2/">HOME</a></li>
+<li class="page_item page-item-4564"><a href="/lista-de-deseos/">Lista de deseos</a></li>
+<li class="page_item page-item-8"><a href="/">LP Innova</a></li>
+<li class="page_item page-item-2905"><a href="/marca-x/">MARCA X</a></li>
+<li class="page_item page-item-1252 page_item_has_children">
+<a href="/mi-cuenta/">Mi cuenta de usuario</a>
+<ul class="children">
+	<li class="page_item page-item-1257"><a href="/mi-cuenta/logout/">Logout</a></li>
+</ul>
+</li>
+<li class="page_item page-item-2866"><a href="/mikrotik/">MIKROTIK</a></li>
+<li class="page_item page-item-4567"><a href="/mis-ordenes/">Mis ordenes</a></li>
+<li class="page_item page-item-3030"><a href="/nanostation-loco-m5/">NanoStation LoCo M5</a></li>
+<li class="page_item page-item-4547"><a href="/nuestro-productos/">Nuestro productos</a></li>
+<li class="page_item page-item-1251"><a href="/realizar-pago/">Realizar pago</a></li>
+<li class="page_item page-item-2"><a href="/sample-page/">Sample Page</a></li>
+<li class="page_item page-item-2694"><a href="/sample-page-2/">Sample Page</a></li>
+<li class="page_item page-item-2699 "><a href="/search/">SEARCH</a></li>
+<li class="page_item page-item-1180 current_page_parent"><a href="/shop/">SHOP</a></li>
+<li class="page_item page-item-2910"><a href="/otros/">TRENDNET/TENDA</a></li>
+<li class="page_item page-item-838"><a href="/ubiquiti/">Ubiquiti</a></li>
+<li class="page_item page-item-2913"><a href="/ubiquiti/">Ubiquiti</a></li>
+<li class="page_item page-item-2921"><a href="/unifi/">UNIFI</a></li>
+<li class="page_item page-item-4461"><a href="/quienes-somos/">¿Quiénes somos?</a></li>
+			</ul>
+
+			</div></aside></div>                            </div>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+        <div class="copyright-bar">
+            <div class="container">
+                <div class="float-start copyright">&copy; <a href="/wordpress/">LP Innova 2019</a>
+</div>
+                <div class="float-end payment"></div>
+            </div>
+        </div>
+</div>
+        <div class="handheld-footer d-lg-none pt-4 v2 ">
+<div class="handheld-widget-menu container">
+                <div class="columns">
+            <aside class="widget clearfix">
+                <div class="body">
+                    <h4 class="widget-title">
+                        Find it Fast                    </h4>
+                    <ul class="menu-find-it-fast menu">
+                    	<li class="cat-item cat-item-399">
+<a href="/product-category/alg-com/">ALG COM</a>
+</li>
+	<li class="cat-item cat-item-396">
+<a href="/product-category/aruba/">ARUBA</a>
+</li>
+	<li class="cat-item cat-item-382">
+<a href="/product-category/cambium/">Cambium</a>
+</li>
+	<li class="cat-item cat-item-65">
+<a href="/product-category/mikrotik/">MIKROTIK</a>
+</li>
+	<li class="cat-item cat-item-381">
+<a href="/product-category/mimosa/">Mimosa</a>
+</li>
+	<li class="cat-item cat-item-398">
+<a href="/product-category/ruijie/">RUIJIE</a>
+</li>
+	<li class="cat-item cat-item-277">
+<a href="/product-category/tenda/">TENDA</a>
+</li>
+	<li class="cat-item cat-item-64">
+<a href="/product-category/tp-link/">TP-LINK</a>
+</li>
+	<li class="cat-item cat-item-62">
+<a href="/product-category/ubiquiti/">UBIQUITI</a>
+</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="columns col"><aside class="widget clearfix"><div class="body">
+<h4 class="widget-title">&nbsp;</h4>
+		<ul>
+						<li><a href="/wp-login.php">Log in</a></li>
+			<li><a href="/feed/">Entries feed</a></li>
+			<li><a href="/comments/feed/">Comments feed</a></li>
+
+			<li><a href="https://wordpress.org/">WordPress.org</a></li>
+		</ul>
+
+		</div></aside></div>
+<div class="columns col"><aside class="widget clearfix"><div class="body">
+<h4 class="widget-title">Customer Care</h4>
+			<ul>
+				<li class="page_item page-item-4459"><a href="/4459-2/">#4459 (no title)</a></li>
+<li class="page_item page-item-2917"><a href="/airfiber/">AIRFIBER</a></li>
+<li class="page_item page-item-2919"><a href="/airvision/">AIRVISION</a></li>
+<li class="page_item page-item-1250"><a href="/cart/">Carro de compras</a></li>
+<li class="page_item page-item-4625"><a href="/comparar-productos/">Comparar productos</a></li>
+<li class="page_item page-item-4539"><a href="/contactanos/">Contáctanos</a></li>
+<li class="page_item page-item-2915"><a href="/edgemax/">EDGEMAX</a></li>
+<li class="page_item page-item-4511"><a href="/elementor-4511/">Elementor #4511</a></li>
+<li class="page_item page-item-4638"><a href="/gracias-por-su-orden/">Gracias por su orden!</a></li>
+<li class="page_item page-item-691"><a href="/home-2/">HOME</a></li>
+<li class="page_item page-item-4564"><a href="/lista-de-deseos/">Lista de deseos</a></li>
+<li class="page_item page-item-8"><a href="/">LP Innova</a></li>
+<li class="page_item page-item-2905"><a href="/marca-x/">MARCA X</a></li>
+<li class="page_item page-item-1252 page_item_has_children">
+<a href="/mi-cuenta/">Mi cuenta de usuario</a>
+<ul class="children">
+	<li class="page_item page-item-1257"><a href="/mi-cuenta/logout/">Logout</a></li>
+</ul>
+</li>
+<li class="page_item page-item-2866"><a href="/mikrotik/">MIKROTIK</a></li>
+<li class="page_item page-item-4567"><a href="/mis-ordenes/">Mis ordenes</a></li>
+<li class="page_item page-item-3030"><a href="/nanostation-loco-m5/">NanoStation LoCo M5</a></li>
+<li class="page_item page-item-4547"><a href="/nuestro-productos/">Nuestro productos</a></li>
+<li class="page_item page-item-1251"><a href="/realizar-pago/">Realizar pago</a></li>
+<li class="page_item page-item-2"><a href="/sample-page/">Sample Page</a></li>
+<li class="page_item page-item-2694"><a href="/sample-page-2/">Sample Page</a></li>
+<li class="page_item page-item-2699 "><a href="/search/">SEARCH</a></li>
+<li class="page_item page-item-1180 current_page_parent"><a href="/shop/">SHOP</a></li>
+<li class="page_item page-item-2910"><a href="/otros/">TRENDNET/TENDA</a></li>
+<li class="page_item page-item-838"><a href="/ubiquiti/">Ubiquiti</a></li>
+<li class="page_item page-item-2913"><a href="/ubiquiti/">Ubiquiti</a></li>
+<li class="page_item page-item-2921"><a href="/unifi/">UNIFI</a></li>
+<li class="page_item page-item-4461"><a href="/quienes-somos/">¿Quiénes somos?</a></li>
+			</ul>
+
+			</div></aside></div>
+</div>
+                    <div class="footer-social-icons container text-center mb-0">
+                <ul class="social-icons-color nav align-items-center row list-unstyled justify-content-center mb-0">
+                    <li><a class="fab fa-facebook" target="_blank" href="/product/mc210cs/facebook.com/lp-innova"></a></li>
+<li><a class="fab fa-whatsapp mobile" target="_blank" href="/product/mc210cs/3147908511"></a></li>
+<li><a class="fas fa-rss" target="_blank" href="/feed/"></a></li>                </ul>
+            </div>
+                    <div class="handheld-footer-bar">
+            <div class="handheld-footer-bar-inner">
+        
+            <div class="footer-call-us">
+                <span class="call-us-text">¿Tienes una duda? Llamanos o usa Whatsapp</span>
+                <span class="call-us-number">314 790 85 11</span>
+            </div>
+
+                    </div>
+        </div>
+        </div>
+        
+	</footer><!-- #colophon -->
+
+	
+	
+</div>
+<!-- #page -->
+</div>
+
+<div class="back-to-top-wrapper position-absolute bottom-0 pe-none">
+		    <a href="#page" class="btn btn-secondary shadows rounded-cricle d-flex align-items-center justify-content-center p-0 pe-auto position-sticky position-fixed back-to-top-link " aria-label="Scroll to Top"><i class="fa fa-angle-up"></i></a>
+		</div>            <div class="electro-overlay"></div>
+        
+<div id="spoki-shadowed-fixed-button" class="spoki-shadowed-button"><div id="spoki-fixed-btn" class="  " style="right:20px;bottom:20px;">
+<div class="spoki-fixed-btn-label " style="display:none;right:62px;font-size:16px;color:#333333;background-color:#ffffff;border-radius:10px;">Chat with us 👋</div>
+<script>(function (d) {setTimeout(function (){try {const shadowedButton = d.querySelector('#spoki-shadowed-fixed-button'); if (shadowedButton) {shadowedButton.shadowRoot.querySelector('.spoki-fixed-btn-label').style.display ='';}} catch (e) {console.log(e)}}, 1000)})(document)</script><span class="spoki-fixed-btn-popup" style="display: none;">1</span><script>(function (d) {setTimeout(function (){try {const shadowedButton = d.querySelector('#spoki-shadowed-fixed-button'); if (shadowedButton) {shadowedButton.shadowRoot.querySelector('.spoki-fixed-btn-popup').style.display ='';}} catch (e) {console.log(e)}}, 1000)})(document)</script><a id="spoki-chat-link" style="background-color:#23d366;border-radius:50%;height:50px;width:50px;" href="https://app.spoki.it/fw/?type=1&phone=+573147908511&text=&furl=" target="_blank" rel="nofollow">
+<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 682 682" style="enable-background:new 0 0 682 682;height:50px;width:50px;" xml:space="preserve">
+<style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}</style>
+<path class="st0" d="M567.2,113.9C507.3,54,427.8,21,343,21C168.4,21,26.3,163.1,26.2,337.8c0,55.8,14.6,110.3,42.3,158.4
+L23.6,660.4l168-44.1c46.3,25.2,98.4,38.5,151.4,38.6h0.1c174.6,0,316.8-142.1,316.8-316.8C659.9,253.4,627,173.8,567.2,113.9z
+M343,601.4h-0.1c-47.3,0-93.6-12.7-134-36.7l-9.6-5.7l-99.7,26.1l26.6-97.2l-6.3-10C93.6,436,79.7,387.6,79.7,337.8
+C79.8,192.6,197.9,74.5,343.2,74.5c70.3,0,136.5,27.4,186.2,77.2s77.1,115.9,77.1,186.3C606.3,483.2,488.2,601.4,343,601.4z
+M487.5,404.1c-7.9-4-46.8-23.1-54.1-25.8c-7.3-2.6-12.5-4-17.8,4c-5.3,7.9-20.4,25.8-25.1,31c-4.6,5.3-9.2,5.9-17.2,2
+c-7.9-4-33.4-12.3-63.7-39.3c-23.5-21-39.4-46.9-44-54.8c-4.6-7.9,0-11.8,3.5-16.2c8.6-10.6,17.2-21.8,19.8-27.1
+c2.6-5.3,1.3-9.9-0.7-13.9c-2-4-17.8-42.9-24.4-58.8c-6.4-15.4-13-13.3-17.8-13.6c-4.6-0.2-9.9-0.3-15.2-0.3c-5.3,0-13.9,2-21.1,9.9
+c-7.3,7.9-27.7,27.1-27.7,66s28.4,76.6,32.3,81.9c4,5.3,55.8,85.2,135.2,119.5c18.9,8.2,33.6,13,45.1,16.7c19,6,36.2,5.2,49.9,3.1
+c15.2-2.3,46.8-19.2,53.4-37.6c6.6-18.5,6.6-34.3,4.6-37.6C500.7,410.1,495.4,408.1,487.5,404.1z"></path>
+</svg></a>
+</div></div>
+		<script>window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = true;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';</script>
+		<p class="woocommerce-store-notice demo_store" data-notice-id="e884faef70e3f4c2add1b0c708cbb2df" style="display:none;">This is a demo store for testing purposes — no orders shall be fulfilled. <a href="#" class="woocommerce-store-notice__dismiss-link">Dismiss</a></p>
+<script>document.addEventListener('DOMContentLoaded', function () {
+    (() => Array.from(document.getElementsByClassName('spoki-shadowed-button')).forEach(el => {
+        const content = document.importNode(el, true);
+        const shadowRoot = el.attachShadow({mode: 'open'});
+        el.innerHTML = '';
+        el.className = el.className.replace('spoki-shadowed-button', '');
+        const style = document.createElement('style');
+        style.innerHTML = document.getElementById('spoki-style-buttons').innerHTML.replace(/(\\r\\n|\\n|\\r)/gm, '');
+        shadowRoot.appendChild(style);
+        shadowRoot.appendChild(content.firstChild);
+    }))();
+})</script>        <span class="ssp-id" style="display:none">5257</span>
+		<script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"name":"Home","@id":""}},{"@type":"ListItem","position":2,"item":{"name":"TP-LINK","@id":"\/product-category\/tp-link\/"}},{"@type":"ListItem","position":3,"item":{"name":"MC210CS","@id":"\/product\/mc210cs\/"}}]}</script>
+<div class="pswp" tabindex="-1" role="dialog" aria-modal="true" aria-hidden="true">
+	<div class="pswp__bg"></div>
+	<div class="pswp__scroll-wrap">
+		<div class="pswp__container">
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+		</div>
+		<div class="pswp__ui pswp__ui--hidden">
+			<div class="pswp__top-bar">
+				<div class="pswp__counter"></div>
+				<button class="pswp__button pswp__button--zoom" aria-label="Zoom in/out"></button>
+				<button class="pswp__button pswp__button--fs" aria-label="Toggle fullscreen"></button>
+				<button class="pswp__button pswp__button--share" aria-label="Share"></button>
+				<button class="pswp__button pswp__button--close" aria-label="Close (Esc)"></button>
+				<div class="pswp__preloader">
+					<div class="pswp__preloader__icn">
+						<div class="pswp__preloader__cut">
+							<div class="pswp__preloader__donut"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+				<div class="pswp__share-tooltip"></div>
+			</div>
+			<button class="pswp__button pswp__button--arrow--left" aria-label="Previous (arrow left)"></button>
+			<button class="pswp__button pswp__button--arrow--right" aria-label="Next (arrow right)"></button>
+			<div class="pswp__caption">
+				<div class="pswp__caption__center"></div>
+			</div>
+		</div>
+	</div>
+</div>
+	<script type="text/javascript">(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();</script>
+	<link rel="stylesheet" id="wc-blocks-style-css" href="/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=wc-9.6.1" type="text/css" media="all">
+<link rel="stylesheet" id="rs-plugin-settings-css" href="/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.6.14" type="text/css" media="all">
+<style id="rs-plugin-settings-inline-css" type="text/css">#rs-demo-id {}</style>
+<script type="text/javascript" src="/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.6.14" defer async id="tp-tools-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.6.14" defer async id="revmin-js"></script>
+<script type="text/javascript" src="/wp-content/themes/electro/assets/js/bootstrap.bundle.min.js?ver=3.3.9" id="bootstrap-js-js"></script>
+<script type="text/javascript" src="/wp-content/themes/electro/assets/js/jquery.waypoints.min.js?ver=3.3.9" id="waypoints-js-js"></script>
+<script type="text/javascript" src="/wp-content/themes/electro/assets/js/waypoints-sticky.min.js?ver=3.3.9" id="waypoints-sticky-js-js"></script>
+<script type="text/javascript" id="electro-js-js-extra">
+/* <![CDATA[ */
+var electro_options = {"rtl":"0","ajax_url":"\/wp-admin\/admin-ajax.php","ajax_loader_url":"\/wp-content\/themes\/electro\/assets\/images\/ajax-loader.gif","enable_sticky_header":"1","enable_hh_sticky_header":"","enable_live_search":"","live_search_limit":"10","live_search_template":"<a href=\"{{url}}\" class=\"media live-search-media\"><img src=\"{{image}}\" class=\"media-left media-object flip float-start\" height=\"60\" width=\"60\"><div class=\"media-body\"><p>{{{value}}}<\/p><\/div><\/a>","live_search_empty_msg":"Unable to find any products that match the current query","deal_countdown_text":{"days_text":"Days","hours_text":"Hours","mins_text":"Mins","secs_text":"Secs"},"typeahead_options":{"hint":false,"highlight":true},"offcanvas_mcs_options":{"axis":"y","theme":"minimal-dark","contentTouchScroll":100,"scrollInertia":1500}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/electro/assets/js/electro.min.js?ver=3.3.9" id="electro-js-js"></script>
+<script type="text/javascript" src="/wp-content/themes/electro/assets/js/owl.carousel.min.js?ver=3.3.9" id="owl-carousel-js-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=9.6.1" id="sourcebuster-js-js"></script>
+<script type="text/javascript" id="wc-order-attribution-js-extra">
+/* <![CDATA[ */
+var wc_order_attribution = {"params":{"lifetime":1.0e-5,"session":30,"base64":false,"ajaxurl":"\/wp-admin\/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","utm_source_platform":"current.plt","utm_creative_format":"current.fmt","utm_marketing_tactic":"current.tct","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=9.6.1" id="wc-order-attribution-js"></script>
+<script></script>
+</body>
+</html>
