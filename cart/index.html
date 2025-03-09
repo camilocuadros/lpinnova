@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -319,8 +319,8 @@
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="alternate" type="application/rss+xml" title="LP Innova &raquo; Feed" href="/feed/">
-<link rel="alternate" type="application/rss+xml" title="LP Innova &raquo; Comments Feed" href="/comments/feed/">
-<link rel="alternate" type="application/rss+xml" title="LP Innova &raquo; Carro de compras Comments Feed" href="/cart/feed/">
+<link rel="alternate" type="application/rss+xml" title="LP Innova &raquo; Feed de los comentarios" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="LP Innova &raquo; Comentario Carro de compras del feed" href="/cart/feed/">
 <script type="text/javascript">
 /* <![CDATA[ */
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.2"}};
@@ -359,7 +359,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <script type="text/javascript" src="/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.9.6.1" id="jquery-blockui-js" data-wp-strategy="defer"></script>
 <script type="text/javascript" id="wc-add-to-cart-js-extra">
 /* <![CDATA[ */
-var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"\/cart\/","is_cart":"1","cart_redirect_after_add":"yes"};
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"Ver carrito","cart_url":"\/cart\/","is_cart":"1","cart_redirect_after_add":"yes"};
 /* ]]> */
 </script>
 <script type="text/javascript" src="/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=9.6.1" id="wc-add-to-cart-js" data-wp-strategy="defer"></script>
@@ -372,19 +372,19 @@ var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":
 <script type="text/javascript" src="/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=9.6.1" id="woocommerce-js" defer data-wp-strategy="defer"></script>
 <script type="text/javascript" id="wc-country-select-js-extra">
 /* <![CDATA[ */
-var wc_country_select_params = {"countries":"{\"CO\":{\"CO-AMA\":\"Amazonas\",\"CO-ANT\":\"Antioquia\",\"CO-ARA\":\"Arauca\",\"CO-ATL\":\"Atl\ántico\",\"CO-BOL\":\"Bol\ívar\",\"CO-BOY\":\"Boyac\á\",\"CO-CAL\":\"Caldas\",\"CO-CAQ\":\"Caquet\á\",\"CO-CAS\":\"Casanare\",\"CO-CAU\":\"Cauca\",\"CO-CES\":\"Cesar\",\"CO-CHO\":\"Choc\ó\",\"CO-COR\":\"C\órdoba\",\"CO-CUN\":\"Cundinamarca\",\"CO-DC\":\"Capital District\",\"CO-GUA\":\"Guain\ía\",\"CO-GUV\":\"Guaviare\",\"CO-HUI\":\"Huila\",\"CO-LAG\":\"La Guajira\",\"CO-MAG\":\"Magdalena\",\"CO-MET\":\"Meta\",\"CO-NAR\":\"Nari\ño\",\"CO-NSA\":\"Norte de Santander\",\"CO-PUT\":\"Putumayo\",\"CO-QUI\":\"Quind\ío\",\"CO-RIS\":\"Risaralda\",\"CO-SAN\":\"Santander\",\"CO-SAP\":\"San Andr\és & Providencia\",\"CO-SUC\":\"Sucre\",\"CO-TOL\":\"Tolima\",\"CO-VAC\":\"Valle del Cauca\",\"CO-VAU\":\"Vaup\és\",\"CO-VID\":\"Vichada\"}}","i18n_select_state_text":"Select an option…","i18n_no_matches":"No matches found","i18n_ajax_error":"Loading failed","i18n_input_too_short_1":"Please enter 1 or more characters","i18n_input_too_short_n":"Please enter %qty% or more characters","i18n_input_too_long_1":"Please delete 1 character","i18n_input_too_long_n":"Please delete %qty% characters","i18n_selection_too_long_1":"You can only select 1 item","i18n_selection_too_long_n":"You can only select %qty% items","i18n_load_more":"Loading more results…","i18n_searching":"Searching…"};
+var wc_country_select_params = {"countries":"{\"CO\":{\"CO-AMA\":\"Amazonas\",\"CO-ANT\":\"Antioquia\",\"CO-ARA\":\"Arauca\",\"CO-ATL\":\"Atl\ántico\",\"CO-BOL\":\"Bol\ívar\",\"CO-BOY\":\"Boyac\á\",\"CO-CAL\":\"Caldas\",\"CO-CAQ\":\"Caquet\á\",\"CO-CAS\":\"Casanare\",\"CO-CAU\":\"Cauca\",\"CO-CES\":\"Cesar\",\"CO-CHO\":\"Choc\ó\",\"CO-COR\":\"C\órdoba\",\"CO-CUN\":\"Cundinamarca\",\"CO-DC\":\"Distrito Capital\",\"CO-GUA\":\"Guain\ía\",\"CO-GUV\":\"Guaviare\",\"CO-HUI\":\"Huila\",\"CO-LAG\":\"La Guajira\",\"CO-MAG\":\"Magdalena\",\"CO-MET\":\"Meta\",\"CO-NAR\":\"Nari\ño\",\"CO-NSA\":\"Norte de Santander\",\"CO-PUT\":\"Putumayo\",\"CO-QUI\":\"Quind\ío\",\"CO-RIS\":\"Risaralda\",\"CO-SAN\":\"Santander\",\"CO-SAP\":\"San Andr\és y Providencia\",\"CO-SUC\":\"Sucre\",\"CO-TOL\":\"Tolima\",\"CO-VAC\":\"Valle del Cauca\",\"CO-VAU\":\"Vaup\és\",\"CO-VID\":\"Vichada\"}}","i18n_select_state_text":"Elige una opción…","i18n_no_matches":"No se han encontrado coincidencias","i18n_ajax_error":"Error al cargar","i18n_input_too_short_1":"Por favor, introduce 1 o más caracteres","i18n_input_too_short_n":"Por favor, introduce %qty% o más caracteres","i18n_input_too_long_1":"Por favor, borra 1 carácter.","i18n_input_too_long_n":"Por favor, borra %qty% caracteres","i18n_selection_too_long_1":"Solo puedes seleccionar 1 artículo","i18n_selection_too_long_n":"Solo puedes seleccionar %qty% artículos","i18n_load_more":"Cargando más resultados…","i18n_searching":"Buscando…"};
 /* ]]> */
 </script>
 <script type="text/javascript" src="/wp-content/plugins/woocommerce/assets/js/frontend/country-select.min.js?ver=9.6.1" id="wc-country-select-js" defer data-wp-strategy="defer"></script>
 <script type="text/javascript" id="wc-address-i18n-js-extra">
 /* <![CDATA[ */
-var wc_address_i18n_params = {"locale":"{\"CO\":{\"postcode\":{\"required\":false},\"state\":{\"label\":\"Department\"}},\"default\":{\"first_name\":{\"label\":\"First name\",\"required\":true,\"class\":[\"form-row-first\"],\"autocomplete\":\"given-name\",\"priority\":10},\"last_name\":{\"label\":\"Last name\",\"required\":true,\"class\":[\"form-row-last\"],\"autocomplete\":\"family-name\",\"priority\":20},\"company\":{\"label\":\"Company name\",\"class\":[\"form-row-wide\"],\"autocomplete\":\"organization\",\"priority\":30,\"required\":false},\"country\":{\"type\":\"country\",\"label\":\"Country \\\/ Region\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\",\"update_totals_on_change\"],\"autocomplete\":\"country\",\"priority\":40},\"address_1\":{\"label\":\"Street address\",\"placeholder\":\"House number and street name\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\"],\"autocomplete\":\"address-line1\",\"priority\":50},\"address_2\":{\"label\":\"Apartment, suite, unit, etc.\",\"label_class\":[\"screen-reader-text\"],\"placeholder\":\"Apartment, suite, unit, etc. (optional)\",\"class\":[\"form-row-wide\",\"address-field\"],\"autocomplete\":\"address-line2\",\"priority\":60,\"required\":false},\"city\":{\"label\":\"Town \\\/ City\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\"],\"autocomplete\":\"address-level2\",\"priority\":70},\"state\":{\"type\":\"state\",\"label\":\"State \\\/ County\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\"],\"validate\":[\"state\"],\"autocomplete\":\"address-level1\",\"priority\":80},\"postcode\":{\"label\":\"Postcode \\\/ ZIP\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\"],\"validate\":[\"postcode\"],\"autocomplete\":\"postal-code\",\"priority\":90}}}","locale_fields":"{\"address_1\":\"#billing_address_1_field, #shipping_address_1_field\",\"address_2\":\"#billing_address_2_field, #shipping_address_2_field\",\"state\":\"#billing_state_field, #shipping_state_field, #calc_shipping_state_field\",\"postcode\":\"#billing_postcode_field, #shipping_postcode_field, #calc_shipping_postcode_field\",\"city\":\"#billing_city_field, #shipping_city_field, #calc_shipping_city_field\"}","i18n_required_text":"required","i18n_optional_text":"optional"};
+var wc_address_i18n_params = {"locale":"{\"CO\":{\"postcode\":{\"required\":false},\"state\":{\"label\":\"Departamento\"}},\"default\":{\"first_name\":{\"label\":\"Nombre\",\"required\":true,\"class\":[\"form-row-first\"],\"autocomplete\":\"given-name\",\"priority\":10},\"last_name\":{\"label\":\"Apellidos\",\"required\":true,\"class\":[\"form-row-last\"],\"autocomplete\":\"family-name\",\"priority\":20},\"company\":{\"label\":\"Nombre de la empresa\",\"class\":[\"form-row-wide\"],\"autocomplete\":\"organization\",\"priority\":30,\"required\":false},\"country\":{\"type\":\"country\",\"label\":\"Pa\ís \\\/ Regi\ón\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\",\"update_totals_on_change\"],\"autocomplete\":\"country\",\"priority\":40},\"address_1\":{\"label\":\"Direcci\ón de la calle\",\"placeholder\":\"Nombre de la calle y n\úmero de la casa\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\"],\"autocomplete\":\"address-line1\",\"priority\":50},\"address_2\":{\"label\":\"Apartamento, habitaci\ón, escalera, etc.\",\"label_class\":[\"screen-reader-text\"],\"placeholder\":\"Apartamento, habitaci\ón, etc. (opcional)\",\"class\":[\"form-row-wide\",\"address-field\"],\"autocomplete\":\"address-line2\",\"priority\":60,\"required\":false},\"city\":{\"label\":\"Poblaci\ón\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\"],\"autocomplete\":\"address-level2\",\"priority\":70},\"state\":{\"type\":\"state\",\"label\":\"Regi\ón \\\/ Provincia\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\"],\"validate\":[\"state\"],\"autocomplete\":\"address-level1\",\"priority\":80},\"postcode\":{\"label\":\"C\ódigo postal \\\/ ZIP\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\"],\"validate\":[\"postcode\"],\"autocomplete\":\"postal-code\",\"priority\":90}}}","locale_fields":"{\"address_1\":\"#billing_address_1_field, #shipping_address_1_field\",\"address_2\":\"#billing_address_2_field, #shipping_address_2_field\",\"state\":\"#billing_state_field, #shipping_state_field, #calc_shipping_state_field\",\"postcode\":\"#billing_postcode_field, #shipping_postcode_field, #calc_shipping_postcode_field\",\"city\":\"#billing_city_field, #shipping_city_field, #calc_shipping_city_field\"}","i18n_required_text":"obligatorio","i18n_optional_text":"opcional"};
 /* ]]> */
 </script>
 <script type="text/javascript" src="/wp-content/plugins/woocommerce/assets/js/frontend/address-i18n.min.js?ver=9.6.1" id="wc-address-i18n-js" defer data-wp-strategy="defer"></script>
 <script type="text/javascript" id="wc-cart-js-extra">
 /* <![CDATA[ */
-var wc_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","update_shipping_method_nonce":"406f93214c","apply_coupon_nonce":"24c7414485","remove_coupon_nonce":"524a0e68bd"};
+var wc_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","update_shipping_method_nonce":"a73520ac18","apply_coupon_nonce":"580b049d59","remove_coupon_nonce":"8ec5f4f3e4"};
 /* ]]> */
 </script>
 <script type="text/javascript" src="/wp-content/plugins/woocommerce/assets/js/frontend/cart.min.js?ver=9.6.1" id="wc-cart-js" defer data-wp-strategy="defer"></script>
@@ -404,13 +404,22 @@ wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );
 </script>
 <script type="text/javascript" id="password-strength-meter-js-extra">
 /* <![CDATA[ */
-var pwsL10n = {"unknown":"Password strength unknown","short":"Very weak","bad":"Weak","good":"Medium","strong":"Strong","mismatch":"Mismatch"};
+var pwsL10n = {"unknown":"Fortaleza de la contraseña desconocida","short":"Muy débil","bad":"Débil","good":"Medio","strong":"Fuerte","mismatch":"No coinciden"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="password-strength-meter-js-translations">
+/* <![CDATA[ */
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2024-11-20 15:25:26+0000","generator":"GlotPress\/4.0.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"es"},"%1$s is deprecated since version %2$s! Use %3$s instead. Please consider writing more inclusive code.":["¡%1$s está obsoleto desde la versión %2$s! Usa %3$s en su lugar. Por favor, plantéate escribir un código más inclusivo."]}},"comment":{"reference":"wp-admin\/js\/password-strength-meter.js"}} );
 /* ]]> */
 </script>
 <script type="text/javascript" src="/wp-admin/js/password-strength-meter.min.js?ver=6.7.2" id="password-strength-meter-js"></script>
 <script type="text/javascript" id="wc-password-strength-meter-js-extra">
 /* <![CDATA[ */
-var wc_password_strength_meter_params = {"min_password_strength":"3","stop_checkout":"","i18n_password_error":"Please enter a stronger password.","i18n_password_hint":"Hint: The password should be at least twelve characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! \" ? $ % ^ & )."};
+var wc_password_strength_meter_params = {"min_password_strength":"3","stop_checkout":"","i18n_password_error":"Por favor, introduce una contraseña más fuerte.","i18n_password_hint":"Sugerencia: La contraseña debe ser de al menos doce caracteres. Para hacerla más fuerte usa mayúsculas y minúsculas, números y símbolos como ! \" ? $ % ^ y )."};
 /* ]]> */
 </script>
 <script type="text/javascript" src="/wp-content/plugins/woocommerce/assets/js/frontend/password-strength-meter.min.js?ver=9.6.1" id="wc-password-strength-meter-js" defer data-wp-strategy="defer"></script>
@@ -418,28 +427,27 @@ var wc_password_strength_meter_params = {"min_password_strength":"3","stop_check
 <script></script><link rel="https://api.w.org/" href="/wp-json/">
 <link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/pages/1250">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
-
+<meta name="generator" content="WordPress 6.7.2">
+<meta name="generator" content="WooCommerce 9.6.1">
 <link rel="canonical" href="/cart/">
 <link rel="shortlink" href="/?p=1250">
-<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fcart%2F">
-<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fcart%2F#038;format=xml">
-<meta name="generator" content="Redux 4.5.6">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fcart%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fcart%2F#038;format=xml">
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-N84FL4C8');</script>
-<!-- End Google Tag Manager --><!-- Head & Footer Code: Site-wide HEAD section start (page) -->
- <!-- Google tag (gtag.js) -->
+<!-- End Google Tag Manager --><meta name="generator" content="Redux 4.5.6">			                <meta name="ssp-config-path" content="/wp-content/uploads/simply-static/configs/">
+			
+						<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-996326883"></script>
 <script>window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'AW-996326883');</script>
-<!-- Head & Footer Code: Site-wide HEAD section end (page) -->
-	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+  gtag('config', 'AW-996326883');</script>	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
 	<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
 <style type="text/css" id="custom-background-css">body.custom-background { background-color: #ffffff; }</style>
 	<meta name="generator" content="Powered by Slider Revolution 6.6.14 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
@@ -1297,7 +1305,7 @@ span.navbar-toggler-icon {
 		<noscript><style>.wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
 </head>
 
-<body class="page-template-default page page-id-1250 custom-background theme-electro woocommerce-cart woocommerce-page woocommerce-demo-store woocommerce-no-js no-breadcrumb wpb-js-composer js-comp-ver-7.9 vc_responsive">
+<body class="page-template-default page page-id-1250 custom-background theme-electro woocommerce-cart woocommerce-page woocommerce-no-js no-breadcrumb wpb-js-composer js-comp-ver-7.9 vc_responsive">
 	<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N84FL4C8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) --><div class="off-canvas-wrapper w-100 position-relative">
@@ -1305,17 +1313,6 @@ span.navbar-toggler-icon {
 			<a class="skip-link screen-reader-text visually-hidden" href="#site-navigation">Skip to navigation</a>
 		<a class="skip-link screen-reader-text visually-hidden" href="#content">Skip to content</a>
 		
-			
-		<div class="top-bar">
-			<div class="container clearfix">
-			<ul id="menu-top-bar-right" class="nav nav-inline float-end electro-animate-dropdown flip">
-<li id="menu-item-4467" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4467"><a title="314 7908511" href="#"><i class="fa fa-mobile"></i>314 7908511</a></li>
-<li id="menu-item-4468" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4468"><a title="lpinnovamedellin@gmail.com" href="#"><i class="fa fa-envelope"></i>lpinnovamedellin@gmail.com</a></li>
-</ul>			</div>
-		</div>
-<!-- /.top-bar -->
-
-			
 	
 	<header id="masthead" class="site-header header-v3 stick-this">
 		<div class="container hidden-lg-down d-none d-xl-block">
@@ -1385,24 +1382,7 @@ span.navbar-toggler-icon {
                     </div>
                                     </li>
                             </ul>
-        </div>
-<div class="header-icon header-icon__cart animate-dropdown dropdown" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Cart">
-            <a class="dropdown-toggle" href="/cart/" data-bs-toggle="dropdown">
-                <i class="ec ec-add-to-cart"></i>
-                <span class="cart-items-count count header-icon-counter">0</span>
-                <span class="cart-items-total-price total-price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>0.00</bdi></span></span>
-            </a>
-                                <ul class="dropdown-menu dropdown-menu-mini-cart border-bottom-0-last-child">
-                        <li>
-                            <div class="widget_shopping_cart_content border-bottom-0-last-child">
-                              
-
-	<p class="woocommerce-mini-cart__empty-message">No products in the cart.</p>
-
-
-                            </div>
-                        </li>
-                    </ul>        </div>		</div>
+        </div>		</div>
 <!-- /.header-icons -->
 				</div>
 		<div class="electro-navbar-primary electro-animate-dropdown">
@@ -1445,26 +1425,20 @@ span.navbar-toggler-icon {
                 </a>
             </div>
             		<div class="handheld-header-links">
-			<ul class="columns-3">
+			<ul class="columns-2">
 									<li class="search">
 						<a>Search</a>			<div class="site-search">
 				<div class="widget woocommerce widget_product_search">
 <form role="search" method="get" class="woocommerce-product-search" action="/">
-	<label class="screen-reader-text" for="woocommerce-product-search-field-0">Search for:</label>
-	<input type="search" id="woocommerce-product-search-field-0" class="search-field" placeholder="Search products&hellip;" value="" name="s">
-	<button type="submit" value="Search" class="">Search</button>
+	<label class="screen-reader-text" for="woocommerce-product-search-field-0">Buscar por:</label>
+	<input type="search" id="woocommerce-product-search-field-0" class="search-field" placeholder="Buscar productos&hellip;" value="" name="s">
+	<button type="submit" value="Buscar" class="">Buscar</button>
 	<input type="hidden" name="post_type" value="product">
 </form>
 </div>			</div>
 							</li>
 									<li class="my-account">
 						<a href="/mi-cuenta/"><i class="ec ec-user"></i></a>					</li>
-									<li class="cart">
-									<a class="footer-cart-contents" href="/cart/" title="View your shopping cart">
-				<i class="ec ec-add-to-cart"></i>
-				<span class="cart-items-count count">0</span>
-			</a>
-								</li>
 							</ul>
 		</div>
 						</div>
@@ -1489,10 +1463,10 @@ span.navbar-toggler-icon {
 <div class="woocommerce-notices-wrapper"></div>
 <div class="wc-empty-cart-message">
 	<div class="cart-empty woocommerce-info">
-		Your cart is currently empty.	</div>
+		Tu carrito está vacío.	</div>
 </div>	<p class="return-to-shop">
 		<a class="button wc-backward" href="/shop/">
-			Return to shop		</a>
+			Volver a la tienda		</a>
 	</p>
 </div>
 		</div>
@@ -1529,7 +1503,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-476" class="comment-date">
-							<time>December 24, 2022</time>						</a>
+							<time>diciembre 24, 2022</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -1556,7 +1530,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-487" class="comment-date">
-							<time>December 26, 2022</time>						</a>
+							<time>diciembre 26, 2022</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -1583,7 +1557,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-520" class="comment-date">
-							<time>January 12, 2023</time>						</a>
+							<time>enero 12, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -1610,7 +1584,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-523" class="comment-date">
-							<time>January 13, 2023</time>						</a>
+							<time>enero 13, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -1637,7 +1611,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-524" class="comment-date">
-							<time>January 13, 2023</time>						</a>
+							<time>enero 13, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -1664,7 +1638,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-526" class="comment-date">
-							<time>January 14, 2023</time>						</a>
+							<time>enero 14, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -1691,7 +1665,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-528" class="comment-date">
-							<time>January 14, 2023</time>						</a>
+							<time>enero 14, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -1718,7 +1692,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-530" class="comment-date">
-							<time>January 14, 2023</time>						</a>
+							<time>enero 14, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -1745,7 +1719,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-536" class="comment-date">
-							<time>January 18, 2023</time>						</a>
+							<time>enero 18, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -1772,7 +1746,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-538" class="comment-date">
-							<time>January 19, 2023</time>						</a>
+							<time>enero 19, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -1799,7 +1773,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-539" class="comment-date">
-							<time>January 19, 2023</time>						</a>
+							<time>enero 19, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -1826,7 +1800,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-540" class="comment-date">
-							<time>January 19, 2023</time>						</a>
+							<time>enero 19, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -1853,7 +1827,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-542" class="comment-date">
-							<time>January 26, 2023</time>						</a>
+							<time>enero 26, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -1880,7 +1854,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-544" class="comment-date">
-							<time>January 26, 2023</time>						</a>
+							<time>enero 26, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -1907,7 +1881,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-546" class="comment-date">
-							<time>January 26, 2023</time>						</a>
+							<time>enero 26, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -1934,7 +1908,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-547" class="comment-date">
-							<time>January 27, 2023</time>						</a>
+							<time>enero 27, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -1961,7 +1935,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-550" class="comment-date">
-							<time>January 27, 2023</time>						</a>
+							<time>enero 27, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -1988,7 +1962,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-552" class="comment-date">
-							<time>January 28, 2023</time>						</a>
+							<time>enero 28, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2015,7 +1989,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-554" class="comment-date">
-							<time>January 28, 2023</time>						</a>
+							<time>enero 28, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2042,7 +2016,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-555" class="comment-date">
-							<time>January 29, 2023</time>						</a>
+							<time>enero 29, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2069,7 +2043,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-558" class="comment-date">
-							<time>January 29, 2023</time>						</a>
+							<time>enero 29, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2096,7 +2070,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-559" class="comment-date">
-							<time>January 31, 2023</time>						</a>
+							<time>enero 31, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2123,7 +2097,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-561" class="comment-date">
-							<time>February 3, 2023</time>						</a>
+							<time>febrero 3, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2150,7 +2124,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-564" class="comment-date">
-							<time>February 3, 2023</time>						</a>
+							<time>febrero 3, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2177,7 +2151,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-565" class="comment-date">
-							<time>February 3, 2023</time>						</a>
+							<time>febrero 3, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2204,7 +2178,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-566" class="comment-date">
-							<time>February 4, 2023</time>						</a>
+							<time>febrero 4, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2231,7 +2205,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-570" class="comment-date">
-							<time>February 4, 2023</time>						</a>
+							<time>febrero 4, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2258,7 +2232,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-571" class="comment-date">
-							<time>February 5, 2023</time>						</a>
+							<time>febrero 5, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2285,7 +2259,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-572" class="comment-date">
-							<time>February 5, 2023</time>						</a>
+							<time>febrero 5, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2312,7 +2286,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-575" class="comment-date">
-							<time>February 5, 2023</time>						</a>
+							<time>febrero 5, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2339,7 +2313,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-577" class="comment-date">
-							<time>February 5, 2023</time>						</a>
+							<time>febrero 5, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2366,7 +2340,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-578" class="comment-date">
-							<time>February 5, 2023</time>						</a>
+							<time>febrero 5, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2393,7 +2367,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-580" class="comment-date">
-							<time>February 5, 2023</time>						</a>
+							<time>febrero 5, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2420,7 +2394,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-582" class="comment-date">
-							<time>February 5, 2023</time>						</a>
+							<time>febrero 5, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2447,7 +2421,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-585" class="comment-date">
-							<time>February 5, 2023</time>						</a>
+							<time>febrero 5, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2474,7 +2448,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-586" class="comment-date">
-							<time>February 6, 2023</time>						</a>
+							<time>febrero 6, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2501,7 +2475,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-588" class="comment-date">
-							<time>February 6, 2023</time>						</a>
+							<time>febrero 6, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2528,7 +2502,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-592" class="comment-date">
-							<time>February 7, 2023</time>						</a>
+							<time>febrero 7, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2555,7 +2529,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-599" class="comment-date">
-							<time>February 8, 2023</time>						</a>
+							<time>febrero 8, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2582,7 +2556,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-600" class="comment-date">
-							<time>February 8, 2023</time>						</a>
+							<time>febrero 8, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2609,7 +2583,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-603" class="comment-date">
-							<time>February 9, 2023</time>						</a>
+							<time>febrero 9, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2636,7 +2610,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-604" class="comment-date">
-							<time>February 9, 2023</time>						</a>
+							<time>febrero 9, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2663,7 +2637,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-606" class="comment-date">
-							<time>February 9, 2023</time>						</a>
+							<time>febrero 9, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2690,7 +2664,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-610" class="comment-date">
-							<time>February 9, 2023</time>						</a>
+							<time>febrero 9, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2717,7 +2691,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-612" class="comment-date">
-							<time>February 10, 2023</time>						</a>
+							<time>febrero 10, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2744,7 +2718,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-614" class="comment-date">
-							<time>February 10, 2023</time>						</a>
+							<time>febrero 10, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2771,7 +2745,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-616" class="comment-date">
-							<time>February 11, 2023</time>						</a>
+							<time>febrero 11, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2798,7 +2772,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-619" class="comment-date">
-							<time>February 11, 2023</time>						</a>
+							<time>febrero 11, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2825,7 +2799,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-622" class="comment-date">
-							<time>February 12, 2023</time>						</a>
+							<time>febrero 12, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2852,7 +2826,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-624" class="comment-date">
-							<time>February 12, 2023</time>						</a>
+							<time>febrero 12, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2879,7 +2853,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-626" class="comment-date">
-							<time>February 12, 2023</time>						</a>
+							<time>febrero 12, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2906,7 +2880,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-628" class="comment-date">
-							<time>February 12, 2023</time>						</a>
+							<time>febrero 12, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2933,7 +2907,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-630" class="comment-date">
-							<time>February 12, 2023</time>						</a>
+							<time>febrero 12, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2960,7 +2934,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-632" class="comment-date">
-							<time>February 12, 2023</time>						</a>
+							<time>febrero 12, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -2987,7 +2961,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-633" class="comment-date">
-							<time>February 13, 2023</time>						</a>
+							<time>febrero 13, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3014,7 +2988,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-636" class="comment-date">
-							<time>February 14, 2023</time>						</a>
+							<time>febrero 14, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3041,7 +3015,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-639" class="comment-date">
-							<time>February 14, 2023</time>						</a>
+							<time>febrero 14, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3068,7 +3042,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-640" class="comment-date">
-							<time>February 14, 2023</time>						</a>
+							<time>febrero 14, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3095,7 +3069,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-641" class="comment-date">
-							<time>February 14, 2023</time>						</a>
+							<time>febrero 14, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3122,7 +3096,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-645" class="comment-date">
-							<time>February 14, 2023</time>						</a>
+							<time>febrero 14, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3149,7 +3123,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-646" class="comment-date">
-							<time>February 15, 2023</time>						</a>
+							<time>febrero 15, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3176,7 +3150,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-649" class="comment-date">
-							<time>February 15, 2023</time>						</a>
+							<time>febrero 15, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3203,7 +3177,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-651" class="comment-date">
-							<time>February 15, 2023</time>						</a>
+							<time>febrero 15, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3230,7 +3204,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-653" class="comment-date">
-							<time>February 16, 2023</time>						</a>
+							<time>febrero 16, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3257,7 +3231,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-654" class="comment-date">
-							<time>February 16, 2023</time>						</a>
+							<time>febrero 16, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3284,7 +3258,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-660" class="comment-date">
-							<time>February 16, 2023</time>						</a>
+							<time>febrero 16, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3311,7 +3285,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-661" class="comment-date">
-							<time>February 16, 2023</time>						</a>
+							<time>febrero 16, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3338,7 +3312,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-663" class="comment-date">
-							<time>February 16, 2023</time>						</a>
+							<time>febrero 16, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3365,7 +3339,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-664" class="comment-date">
-							<time>February 16, 2023</time>						</a>
+							<time>febrero 16, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3392,7 +3366,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-666" class="comment-date">
-							<time>February 17, 2023</time>						</a>
+							<time>febrero 17, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3419,7 +3393,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-670" class="comment-date">
-							<time>February 17, 2023</time>						</a>
+							<time>febrero 17, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3446,7 +3420,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-671" class="comment-date">
-							<time>February 18, 2023</time>						</a>
+							<time>febrero 18, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3473,7 +3447,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-673" class="comment-date">
-							<time>February 18, 2023</time>						</a>
+							<time>febrero 18, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3500,7 +3474,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-675" class="comment-date">
-							<time>February 18, 2023</time>						</a>
+							<time>febrero 18, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3527,7 +3501,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-677" class="comment-date">
-							<time>February 19, 2023</time>						</a>
+							<time>febrero 19, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3554,7 +3528,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-679" class="comment-date">
-							<time>February 19, 2023</time>						</a>
+							<time>febrero 19, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3581,7 +3555,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-681" class="comment-date">
-							<time>February 19, 2023</time>						</a>
+							<time>febrero 19, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3608,7 +3582,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-683" class="comment-date">
-							<time>February 19, 2023</time>						</a>
+							<time>febrero 19, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3635,7 +3609,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-685" class="comment-date">
-							<time>February 20, 2023</time>						</a>
+							<time>febrero 20, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3662,7 +3636,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-686" class="comment-date">
-							<time>February 20, 2023</time>						</a>
+							<time>febrero 20, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3689,7 +3663,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-689" class="comment-date">
-							<time>February 20, 2023</time>						</a>
+							<time>febrero 20, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3716,7 +3690,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-693" class="comment-date">
-							<time>February 21, 2023</time>						</a>
+							<time>febrero 21, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3743,7 +3717,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-694" class="comment-date">
-							<time>February 21, 2023</time>						</a>
+							<time>febrero 21, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3770,7 +3744,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-696" class="comment-date">
-							<time>February 21, 2023</time>						</a>
+							<time>febrero 21, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3797,7 +3771,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-701" class="comment-date">
-							<time>February 22, 2023</time>						</a>
+							<time>febrero 22, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3824,7 +3798,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-702" class="comment-date">
-							<time>February 22, 2023</time>						</a>
+							<time>febrero 22, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3851,7 +3825,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-704" class="comment-date">
-							<time>February 22, 2023</time>						</a>
+							<time>febrero 22, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3878,7 +3852,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-706" class="comment-date">
-							<time>February 22, 2023</time>						</a>
+							<time>febrero 22, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3905,7 +3879,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-707" class="comment-date">
-							<time>February 23, 2023</time>						</a>
+							<time>febrero 23, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3932,7 +3906,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-709" class="comment-date">
-							<time>February 23, 2023</time>						</a>
+							<time>febrero 23, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3959,7 +3933,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-712" class="comment-date">
-							<time>February 23, 2023</time>						</a>
+							<time>febrero 23, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -3986,7 +3960,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-714" class="comment-date">
-							<time>February 23, 2023</time>						</a>
+							<time>febrero 23, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4013,7 +3987,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-716" class="comment-date">
-							<time>February 23, 2023</time>						</a>
+							<time>febrero 23, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4040,7 +4014,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-718" class="comment-date">
-							<time>February 24, 2023</time>						</a>
+							<time>febrero 24, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4067,7 +4041,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-719" class="comment-date">
-							<time>February 24, 2023</time>						</a>
+							<time>febrero 24, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4094,7 +4068,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-721" class="comment-date">
-							<time>February 24, 2023</time>						</a>
+							<time>febrero 24, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4121,7 +4095,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-724" class="comment-date">
-							<time>February 24, 2023</time>						</a>
+							<time>febrero 24, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4148,7 +4122,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-725" class="comment-date">
-							<time>February 24, 2023</time>						</a>
+							<time>febrero 24, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4175,7 +4149,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-729" class="comment-date">
-							<time>February 25, 2023</time>						</a>
+							<time>febrero 25, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4202,7 +4176,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-732" class="comment-date">
-							<time>February 26, 2023</time>						</a>
+							<time>febrero 26, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4229,7 +4203,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-734" class="comment-date">
-							<time>February 28, 2023</time>						</a>
+							<time>febrero 28, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4256,7 +4230,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-737" class="comment-date">
-							<time>February 28, 2023</time>						</a>
+							<time>febrero 28, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4283,7 +4257,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-738" class="comment-date">
-							<time>March 3, 2023</time>						</a>
+							<time>marzo 3, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4310,7 +4284,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-742" class="comment-date">
-							<time>March 3, 2023</time>						</a>
+							<time>marzo 3, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4337,7 +4311,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-745" class="comment-date">
-							<time>March 7, 2023</time>						</a>
+							<time>marzo 7, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4364,7 +4338,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-747" class="comment-date">
-							<time>March 9, 2023</time>						</a>
+							<time>marzo 9, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4391,7 +4365,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-750" class="comment-date">
-							<time>March 12, 2023</time>						</a>
+							<time>marzo 12, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4418,7 +4392,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-752" class="comment-date">
-							<time>March 19, 2023</time>						</a>
+							<time>marzo 19, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4445,7 +4419,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-755" class="comment-date">
-							<time>March 22, 2023</time>						</a>
+							<time>marzo 22, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4472,7 +4446,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-757" class="comment-date">
-							<time>March 22, 2023</time>						</a>
+							<time>marzo 22, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4499,7 +4473,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-759" class="comment-date">
-							<time>March 24, 2023</time>						</a>
+							<time>marzo 24, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4526,7 +4500,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-761" class="comment-date">
-							<time>April 1, 2023</time>						</a>
+							<time>abril 1, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4553,7 +4527,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-763" class="comment-date">
-							<time>April 2, 2023</time>						</a>
+							<time>abril 2, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4580,7 +4554,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-765" class="comment-date">
-							<time>April 2, 2023</time>						</a>
+							<time>abril 2, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4607,7 +4581,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-767" class="comment-date">
-							<time>April 2, 2023</time>						</a>
+							<time>abril 2, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4634,7 +4608,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-768" class="comment-date">
-							<time>April 3, 2023</time>						</a>
+							<time>abril 3, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4661,7 +4635,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-770" class="comment-date">
-							<time>April 20, 2023</time>						</a>
+							<time>abril 20, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4688,7 +4662,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-771" class="comment-date">
-							<time>April 20, 2023</time>						</a>
+							<time>abril 20, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4715,7 +4689,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-773" class="comment-date">
-							<time>April 20, 2023</time>						</a>
+							<time>abril 20, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4742,7 +4716,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-777" class="comment-date">
-							<time>April 20, 2023</time>						</a>
+							<time>abril 20, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4769,7 +4743,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-783" class="comment-date">
-							<time>April 21, 2023</time>						</a>
+							<time>abril 21, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4796,7 +4770,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-788" class="comment-date">
-							<time>April 21, 2023</time>						</a>
+							<time>abril 21, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4823,7 +4797,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-789" class="comment-date">
-							<time>April 21, 2023</time>						</a>
+							<time>abril 21, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4850,7 +4824,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-790" class="comment-date">
-							<time>April 22, 2023</time>						</a>
+							<time>abril 22, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4877,7 +4851,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-792" class="comment-date">
-							<time>April 22, 2023</time>						</a>
+							<time>abril 22, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4904,7 +4878,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-794" class="comment-date">
-							<time>April 22, 2023</time>						</a>
+							<time>abril 22, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4931,7 +4905,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-796" class="comment-date">
-							<time>April 22, 2023</time>						</a>
+							<time>abril 22, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4958,7 +4932,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-800" class="comment-date">
-							<time>April 22, 2023</time>						</a>
+							<time>abril 22, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -4985,7 +4959,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-803" class="comment-date">
-							<time>April 22, 2023</time>						</a>
+							<time>abril 22, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5012,7 +4986,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-804" class="comment-date">
-							<time>April 22, 2023</time>						</a>
+							<time>abril 22, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5039,7 +5013,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-805" class="comment-date">
-							<time>April 22, 2023</time>						</a>
+							<time>abril 22, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5066,7 +5040,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-808" class="comment-date">
-							<time>April 22, 2023</time>						</a>
+							<time>abril 22, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5093,7 +5067,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-810" class="comment-date">
-							<time>April 22, 2023</time>						</a>
+							<time>abril 22, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5120,7 +5094,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-811" class="comment-date">
-							<time>April 23, 2023</time>						</a>
+							<time>abril 23, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5147,7 +5121,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-812" class="comment-date">
-							<time>April 23, 2023</time>						</a>
+							<time>abril 23, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5174,7 +5148,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-814" class="comment-date">
-							<time>April 23, 2023</time>						</a>
+							<time>abril 23, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5201,7 +5175,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-817" class="comment-date">
-							<time>April 23, 2023</time>						</a>
+							<time>abril 23, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5228,7 +5202,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-819" class="comment-date">
-							<time>April 24, 2023</time>						</a>
+							<time>abril 24, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5255,7 +5229,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-822" class="comment-date">
-							<time>April 24, 2023</time>						</a>
+							<time>abril 24, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5282,7 +5256,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-824" class="comment-date">
-							<time>April 24, 2023</time>						</a>
+							<time>abril 24, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5309,7 +5283,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-825" class="comment-date">
-							<time>April 24, 2023</time>						</a>
+							<time>abril 24, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5336,7 +5310,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-827" class="comment-date">
-							<time>April 24, 2023</time>						</a>
+							<time>abril 24, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5363,7 +5337,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-830" class="comment-date">
-							<time>April 24, 2023</time>						</a>
+							<time>abril 24, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5390,7 +5364,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-831" class="comment-date">
-							<time>April 24, 2023</time>						</a>
+							<time>abril 24, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5417,7 +5391,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-833" class="comment-date">
-							<time>April 24, 2023</time>						</a>
+							<time>abril 24, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5444,7 +5418,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-834" class="comment-date">
-							<time>April 24, 2023</time>						</a>
+							<time>abril 24, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5471,7 +5445,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-841" class="comment-date">
-							<time>April 25, 2023</time>						</a>
+							<time>abril 25, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5498,7 +5472,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-842" class="comment-date">
-							<time>April 25, 2023</time>						</a>
+							<time>abril 25, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5525,7 +5499,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-843" class="comment-date">
-							<time>April 25, 2023</time>						</a>
+							<time>abril 25, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5552,7 +5526,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-844" class="comment-date">
-							<time>April 25, 2023</time>						</a>
+							<time>abril 25, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5579,7 +5553,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-849" class="comment-date">
-							<time>April 26, 2023</time>						</a>
+							<time>abril 26, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5606,7 +5580,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-850" class="comment-date">
-							<time>April 26, 2023</time>						</a>
+							<time>abril 26, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5633,7 +5607,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-851" class="comment-date">
-							<time>April 26, 2023</time>						</a>
+							<time>abril 26, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5660,7 +5634,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-852" class="comment-date">
-							<time>April 26, 2023</time>						</a>
+							<time>abril 26, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5687,7 +5661,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-854" class="comment-date">
-							<time>April 26, 2023</time>						</a>
+							<time>abril 26, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5714,7 +5688,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-855" class="comment-date">
-							<time>April 26, 2023</time>						</a>
+							<time>abril 26, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5741,7 +5715,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-857" class="comment-date">
-							<time>April 26, 2023</time>						</a>
+							<time>abril 26, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5768,7 +5742,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-858" class="comment-date">
-							<time>April 26, 2023</time>						</a>
+							<time>abril 26, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5795,7 +5769,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-859" class="comment-date">
-							<time>April 27, 2023</time>						</a>
+							<time>abril 27, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5822,7 +5796,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-863" class="comment-date">
-							<time>April 27, 2023</time>						</a>
+							<time>abril 27, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5849,7 +5823,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-864" class="comment-date">
-							<time>April 27, 2023</time>						</a>
+							<time>abril 27, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5876,7 +5850,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-866" class="comment-date">
-							<time>June 2, 2023</time>						</a>
+							<time>junio 2, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5903,7 +5877,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-867" class="comment-date">
-							<time>June 2, 2023</time>						</a>
+							<time>junio 2, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5930,7 +5904,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-868" class="comment-date">
-							<time>June 3, 2023</time>						</a>
+							<time>junio 3, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5957,7 +5931,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-869" class="comment-date">
-							<time>June 4, 2023</time>						</a>
+							<time>junio 4, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -5984,7 +5958,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-870" class="comment-date">
-							<time>June 4, 2023</time>						</a>
+							<time>junio 4, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6011,7 +5985,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-871" class="comment-date">
-							<time>June 4, 2023</time>						</a>
+							<time>junio 4, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6038,7 +6012,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-872" class="comment-date">
-							<time>June 4, 2023</time>						</a>
+							<time>junio 4, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6065,7 +6039,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-876" class="comment-date">
-							<time>June 5, 2023</time>						</a>
+							<time>junio 5, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6092,7 +6066,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-877" class="comment-date">
-							<time>June 5, 2023</time>						</a>
+							<time>junio 5, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6119,7 +6093,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-878" class="comment-date">
-							<time>June 5, 2023</time>						</a>
+							<time>junio 5, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6146,7 +6120,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-879" class="comment-date">
-							<time>June 5, 2023</time>						</a>
+							<time>junio 5, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6173,7 +6147,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-880" class="comment-date">
-							<time>June 5, 2023</time>						</a>
+							<time>junio 5, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6200,7 +6174,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-882" class="comment-date">
-							<time>June 6, 2023</time>						</a>
+							<time>junio 6, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6227,7 +6201,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-883" class="comment-date">
-							<time>June 7, 2023</time>						</a>
+							<time>junio 7, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6254,7 +6228,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-885" class="comment-date">
-							<time>June 7, 2023</time>						</a>
+							<time>junio 7, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6281,7 +6255,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-888" class="comment-date">
-							<time>July 15, 2023</time>						</a>
+							<time>julio 15, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6308,7 +6282,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-889" class="comment-date">
-							<time>July 15, 2023</time>						</a>
+							<time>julio 15, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6335,7 +6309,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-891" class="comment-date">
-							<time>July 15, 2023</time>						</a>
+							<time>julio 15, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6362,7 +6336,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-892" class="comment-date">
-							<time>July 15, 2023</time>						</a>
+							<time>julio 15, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6389,7 +6363,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-895" class="comment-date">
-							<time>July 16, 2023</time>						</a>
+							<time>julio 16, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6416,7 +6390,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-897" class="comment-date">
-							<time>July 16, 2023</time>						</a>
+							<time>julio 16, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6443,7 +6417,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-899" class="comment-date">
-							<time>July 24, 2023</time>						</a>
+							<time>julio 24, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6470,7 +6444,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-901" class="comment-date">
-							<time>July 24, 2023</time>						</a>
+							<time>julio 24, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6497,7 +6471,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-907" class="comment-date">
-							<time>July 27, 2023</time>						</a>
+							<time>julio 27, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6524,7 +6498,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-911" class="comment-date">
-							<time>July 30, 2023</time>						</a>
+							<time>julio 30, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6551,7 +6525,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-912" class="comment-date">
-							<time>July 30, 2023</time>						</a>
+							<time>julio 30, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6578,7 +6552,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-913" class="comment-date">
-							<time>July 30, 2023</time>						</a>
+							<time>julio 30, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6605,7 +6579,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-917" class="comment-date">
-							<time>July 31, 2023</time>						</a>
+							<time>julio 31, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6632,7 +6606,7 @@ span.navbar-toggler-icon {
 					
 					<div class="date">
 						<a href="/cart/#comment-920" class="comment-date">
-							<time>July 31, 2023</time>						</a>
+							<time>julio 31, 2023</time>						</a>
 					</div>
 
 					<div class="reply">
@@ -6728,18 +6702,18 @@ span.navbar-toggler-icon {
         <div class="columns col"><aside class="widget clearfix"><div class="body">
 <h4 class="widget-title">&nbsp;</h4>
 		<ul>
-						<li><a href="/wp-login.php">Log in</a></li>
-			<li><a href="/feed/">Entries feed</a></li>
-			<li><a href="/comments/feed/">Comments feed</a></li>
+						<li><a href="/wp-login.php">Acceder</a></li>
+			<li><a href="/feed/">Feed de entradas</a></li>
+			<li><a href="/comments/feed/">Feed de comentarios</a></li>
 
-			<li><a href="https://wordpress.org/">WordPress.org</a></li>
+			<li><a href="https://es.wordpress.org/">WordPress.org</a></li>
 		</ul>
 
 		</div></aside></div>
 <div class="columns col"><aside class="widget clearfix"><div class="body">
 <h4 class="widget-title">Customer Care</h4>
 			<ul>
-				<li class="page_item page-item-4459"><a href="/4459-2/">#4459 (no title)</a></li>
+				<li class="page_item page-item-4459"><a href="/4459-2/">#4459 (sin título)</a></li>
 <li class="page_item page-item-2917"><a href="/airfiber/">AIRFIBER</a></li>
 <li class="page_item page-item-2919"><a href="/airvision/">AIRVISION</a></li>
 <li class="page_item page-item-1250 current_page_item"><a href="/cart/" aria-current="page">Carro de compras</a></li>
@@ -6829,18 +6803,18 @@ span.navbar-toggler-icon {
         <div class="columns col"><aside class="widget clearfix"><div class="body">
 <h4 class="widget-title">&nbsp;</h4>
 		<ul>
-						<li><a href="/wp-login.php">Log in</a></li>
-			<li><a href="/feed/">Entries feed</a></li>
-			<li><a href="/comments/feed/">Comments feed</a></li>
+						<li><a href="/wp-login.php">Acceder</a></li>
+			<li><a href="/feed/">Feed de entradas</a></li>
+			<li><a href="/comments/feed/">Feed de comentarios</a></li>
 
-			<li><a href="https://wordpress.org/">WordPress.org</a></li>
+			<li><a href="https://es.wordpress.org/">WordPress.org</a></li>
 		</ul>
 
 		</div></aside></div>
 <div class="columns col"><aside class="widget clearfix"><div class="body">
 <h4 class="widget-title">Customer Care</h4>
 			<ul>
-				<li class="page_item page-item-4459"><a href="/4459-2/">#4459 (no title)</a></li>
+				<li class="page_item page-item-4459"><a href="/4459-2/">#4459 (sin título)</a></li>
 <li class="page_item page-item-2917"><a href="/airfiber/">AIRFIBER</a></li>
 <li class="page_item page-item-2919"><a href="/airvision/">AIRVISION</a></li>
 <li class="page_item page-item-1250 current_page_item"><a href="/cart/" aria-current="page">Carro de compras</a></li>
@@ -6908,8 +6882,8 @@ span.navbar-toggler-icon {
 		</div>            <div class="electro-overlay"></div>
         
 <div id="spoki-shadowed-fixed-button" class="spoki-shadowed-button"><div id="spoki-fixed-btn" class="  " style="right:20px;bottom:20px;">
-<div class="spoki-fixed-btn-label " style="display:none;right:62px;font-size:16px;color:#333333;background-color:#ffffff;border-radius:10px;">Chat with us 👋</div>
-<script>(function (d) {setTimeout(function (){try {const shadowedButton = d.querySelector('#spoki-shadowed-fixed-button'); if (shadowedButton) {shadowedButton.shadowRoot.querySelector('.spoki-fixed-btn-label').style.display ='';}} catch (e) {console.log(e)}}, 1000)})(document)</script><span class="spoki-fixed-btn-popup" style="display: none;">1</span><script>(function (d) {setTimeout(function (){try {const shadowedButton = d.querySelector('#spoki-shadowed-fixed-button'); if (shadowedButton) {shadowedButton.shadowRoot.querySelector('.spoki-fixed-btn-popup').style.display ='';}} catch (e) {console.log(e)}}, 1000)})(document)</script><a id="spoki-chat-link" style="background-color:#23d366;border-radius:50%;height:50px;width:50px;" href="https://app.spoki.it/fw/?type=1&phone=+573147908511&text=&furl=" target="_blank" rel="nofollow">
+<div class="spoki-fixed-btn-label " style="display:none;right:62px;font-size:16px;color:#333333;background-color:#ffffff;border-radius:10px;">Habla con un asesor!</div>
+<script>(function (d) {setTimeout(function (){try {const shadowedButton = d.querySelector('#spoki-shadowed-fixed-button'); if (shadowedButton) {shadowedButton.shadowRoot.querySelector('.spoki-fixed-btn-label').style.display ='';}} catch (e) {console.log(e)}}, 1000)})(document)</script><span class="spoki-fixed-btn-popup" style="display: none;">1</span><script>(function (d) {setTimeout(function (){try {const shadowedButton = d.querySelector('#spoki-shadowed-fixed-button'); if (shadowedButton) {shadowedButton.shadowRoot.querySelector('.spoki-fixed-btn-popup').style.display ='';}} catch (e) {console.log(e)}}, 1000)})(document)</script><a id="spoki-chat-link" style="background-color:#23d366;border-radius:50%;height:50px;width:50px;" href="https://app.spoki.it/fw/?type=1&phone=+573147908511&text=Hola%21+Quiero+hablar+con+asesor%21&furl=" target="_blank" rel="nofollow">
 <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 682 682" style="enable-background:new 0 0 682 682;height:50px;width:50px;" xml:space="preserve">
 <style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}</style>
 <path class="st0" d="M567.2,113.9C507.3,54,427.8,21,343,21C168.4,21,26.3,163.1,26.2,337.8c0,55.8,14.6,110.3,42.3,158.4
@@ -6929,8 +6903,7 @@ c15.2-2.3,46.8-19.2,53.4-37.6c6.6-18.5,6.6-34.3,4.6-37.6C500.7,410.1,495.4,408.1
 			window.RS_MODULES.defered = true;
 			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
 			window.RS_MODULES.type = 'compiled';</script>
-		<p class="woocommerce-store-notice demo_store" data-notice-id="e884faef70e3f4c2add1b0c708cbb2df" style="display:none;">This is a demo store for testing purposes — no orders shall be fulfilled. <a href="#" class="woocommerce-store-notice__dismiss-link">Dismiss</a></p>
-<script>document.addEventListener('DOMContentLoaded', function () {
+		<script>document.addEventListener('DOMContentLoaded', function () {
     (() => Array.from(document.getElementsByClassName('spoki-shadowed-button')).forEach(el => {
         const content = document.importNode(el, true);
         const shadowRoot = el.attachShadow({mode: 'open'});
